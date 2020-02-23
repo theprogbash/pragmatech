@@ -88,7 +88,7 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'pragmatech',
+            'NAME': 'pragmatechproject',
             'USER': 'kerimov',
             'PASSWORD': '10000hoursrule',
             'HOST': 'localhost',
