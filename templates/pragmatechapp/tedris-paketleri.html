@@ -1,0 +1,170 @@
+{% extends 'pragmatechapp/base.html' %}
+{% block content %}
+<div class="site-wrapper-reveal">
+    {% load static %}
+    <div class="about-banner-wrap banner-space bg-img" data-bg="{% static 'assets/images/hero/home-appointment-hero-bg-image.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 ml-auto mr-auto">
+                    <div class="about-banner-content text-center">
+                        <h1 class="mb-15 text-white">Tədris paketləri</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-sliders-wrapper section-space--ptb_100">
+        {% load static %}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="swiper-container carousel-slider__container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="carousel-slider wow move-up">
+                                    <div class="carousel-slider__content text-center">
+                                        <img src="{% static 'assets/images/timeline/foundation.png' %}">
+                                        <div class="pricing-table__price-wrap">
+                                            <p>Foundation</p>
+                                        </div>
+                                        <div class="text">
+                                            Harvard Universitetinin CS50 kurrikulumu əsasında hazırlanmış tədris metodudur. Bu tədris paketi daxilində tələbələr böyük problərin alqoritmlər vasitəsilə asanlıqla həll oluna biləcəyini, proqramlaşdırmanın ümumi fəlsəfəsini və proqramların arxa planda
+                                            necə işlədiyini çox əyləncəli tətbiqlər vasitəsilə öyrənəcəklər.
+                                        </div>
+                                        <div class="pricing-table__footer">
+                                            <a href="#" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel-slider wow move-up">
+                                    <div class="carousel-slider__content text-center">
+                                        <img src="{% static 'assets/images/timeline/html5-2.png' %}">
+                                        <div class="pricing-table__price-wrap">
+                                            <p>HTML & CSS</p>
+                                        </div>
+                                        <div class="text">
+                                            Verilən dizaynı çox sürətli şəkildə HTML formatına çevirə bilmək üçün tələb olunan bütün HTML və CSS funksionallığı ilə yanaşı tələbələrə kod yazma sürətlərini artıra biləcək əlavə konsepsiyalar, framework-lər və kodlama üslubları öyrədilir.
+                                        </div>
+                                        <div class="pricing-table__footer">
+                                            <a href="#" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel-slider wow move-up">
+                                    <div class="carousel-slider__content text-center">
+                                        <img src="https://img.icons8.com/color/96/000000/javascript.png">
+                                        <div class="pricing-table__price-wrap">
+                                            <p>Javascript</p>
+                                        </div>
+                                        <div class="text">
+                                            ES6 standartları çərçivəsində Javascript-in dil olaraq bütün xüsusiyyətləri əhatə olunur. Bundan əlavə Javascript kitabxana istehsal etmə məntiqi, Javascript frameworklərinin(əsasən React JS) işləmə fəlsəfəsi və tətbiqi, eyni zamanda bu dilə məxsus köməkçi
+                                            alətlərdən istifadə olunması öyrədilir.
+                                        </div>
+                                        <div class="pricing-table__footer">
+                                            <a href="#" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel-slider wow move-up">
+                                    <div class="carousel-slider__content text-center">
+                                        <img src="{% static 'assets/images/timeline/C.png' %}">
+                                        <div class="pricing-table__price-wrap">
+                                            <p>C#</p>
+                                        </div>
+                                        <div class="text">
+                                            Obyekt yönümlü paradiqmanın ən yaxşı tətbiq olunduğu dillərdən olan C# orta və böyük miqyaslı tətbiqlərin yazıla bilməsi üçün çox münbit bir mühit təmin edir (.Net platforması). Bundan əlavə Microsoftun yeni tətbiq etməyə başladığı multiplatforma Core
+                                            konsepsiyası ilə fərqli platformlar üçün tətbiqlər yaza biləcəklər.
+                                        </div>
+                                        <div class="pricing-table__footer">
+                                            <a href="#" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel-slider wow move-up">
+                                    <div class="carousel-slider__content text-center">
+                                        <img src="{% static 'assets/images/timeline/php.png' %}">
+                                        <div class="pricing-table__price-wrap">
+                                            <p>PHP</p>
+                                        </div>
+                                        <div class="text">
+                                            Açıq qaynaqlı və multiplatforma dəstəkli dil olan PHP öyrənməsi rahat, geniş dakumentasiyaya sahib bir dildir. Tələbələr bu dil vasitəsi ilə rahatlıqla veb sistemlər yaza bilmə qabiliyyətinə və PHP-nin Laravel və digər frameworklərinin işləmə prinsiplərinə
+                                            dərindən yiyələnəcəklər.
+                                        </div>
+                                        <div class="pricing-table__footer">
+                                            <a href="#" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel-slider wow move-up">
+                                    <div class="carousel-slider__content text-center">
+                                        <img src="{% static 'assets/images/timeline/python.png' %}">
+                                        <div class="pricing-table__price-wrap">
+                                            <p>Python</p>
+                                        </div>
+                                        <div class="text">
+                                            Python hal hazırda dünyada ən çox öyrənilən dillərdən biridir. Bunun səbəbi Python-un çox geniş əhatədə tətbiq edilə bilməsidir. Tələbələr Python Core öyrənməklə və veb sahəsində tətbiq etməklə bu dilin digər sahələrdə də istifadəsinə hazır hala gələcəklər.
+                                        </div>
+                                        <div class="pricing-table__footer">
+                                            <a href="#" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel-slider wow move-up">
+                                    <div class="carousel-slider__content text-center">
+                                        <img src="{% static 'assets/images/timeline/icon-deployment.png' %}">
+                                        <div class="pricing-table__price-wrap">
+                                            <p>Software deployment</p>
+                                        </div>
+                                        <div class="text">
+                                            Bu paket daxilində tələbələr, məhsulu istifadəyə hazır hala gətirmə, prosesdə problem yaratmayacaq şəkildə yenilikləri tətbiq etmə və proqram versiyaları arasındakı keçidləri zaman itkisi olmadan reallaşdıra bilmə bacarıqlarına yiyələnəcəklər.
+                                        </div>
+                                        <div class="pricing-table__footer">
+                                            <a href="#" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="carousel-slider wow move-up">
+                                    <div class="carousel-slider__content text-center">
+                                        <img src="{% static 'assets/images/timeline/cybersecurity.png' %}">
+                                        <div class="pricing-table__price-wrap">
+                                            <p>Cybersecurity For Developers</p>
+                                        </div>
+                                        <div class="text">
+                                            İstənilən tətbiq üçün təhlükəsizlik çox əhəmiyyətlidir. Bu səbəbdən tələbələrimiz təyin olunmuş mərhələli tapşırıqları yerinə yetirməklə, yazdıqları proqram və tətbiqlərin təhlükəsizliyini təmin edə biləcəklər.
+                                        </div>
+                                        <div class="pricing-table__footer">
+                                            <a href="#" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination-9 section-space--mt_50"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="feature-list-button-box mt-30 text-center">
+            <a href="#" class="ht-btn ht-btn-md">İndi müraciət et</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

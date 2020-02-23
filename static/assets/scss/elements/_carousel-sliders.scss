@@ -1,0 +1,36 @@
+.carousel-slider {
+    &__content {
+        margin-top: 25px;
+        padding: 0 20px;
+        & .headeing {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.site-wrapper-reveal{
+    .carousel-sliders-wrapper{
+        .swiper-container{
+            .swiper-wrapper{
+                .swiper-slide{
+                    .carousel-slider{
+                        .carousel-slider__content{
+                            h6{
+                                margin-bottom: 20px;
+                            }
+                    
+                            .pricing-table__price-wrap{
+                                img{
+                                    width: 30px;
+                                    padding: 10px;
+                                    height: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
