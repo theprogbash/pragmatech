@@ -77,12 +77,24 @@ WSGI_APPLICATION = 'pragmatechproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+if DEBUG:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'pragmatech',
+            'USER': 'kerimov',
+            'PASSWORD': '10000hoursrule',
+            'HOST': 'localhost',
+            'PORT': '',
+        }
+    }
 
 ADMINS = [('Kamran', 'kamransrecovery@gmail.com')]
 
@@ -131,9 +143,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [STATIC_DIR,]
-
-MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
 
-LOGIN_URL = '/pragmatechapp/user_login/'
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static_in_env') 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_root') 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root') 
+
