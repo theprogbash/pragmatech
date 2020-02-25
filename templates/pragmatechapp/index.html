@@ -1,9 +1,9 @@
 {% extends 'pragmatechapp/base.html' %}
 {% block content %}
 <div class="site-wrapper-reveal">
-    {% load static %}   
     <!--============ Appointment Hero Start ============-->
     <div class="appointment-hero-wrapper appointment-hero-bg section-space--ptb_120">
+        {% load static %}
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6">
@@ -13,8 +13,7 @@
                             <h1 class="font-weight--reguler text-white mb-30">Pragmatech</h1>
                             <div class="hero-button">
                                 <div class="video-popup infotech-video-box">
-                                    <a href="https://www.youtube.com/watch?v=9No-FiEInLA"
-                                        class="single-popup-wrap video-link">
+                                    <a href="https://www.youtube.com/watch?v=9No-FiEInLA" class="single-popup-wrap video-link">
                                         <div class="video-content">
                                             <div class="ht-popup-video video-button">
                                                 <div class="video-mark">
@@ -43,28 +42,19 @@
                             <h5 class="mb-10">Müraciət et</h5>
                             <!-- <p class="text">Müracət üçün qeydiyyatdan keç!</p> -->
                         </div>
-                        <form action="{% url 'index' %}" method="post">
-                            {% csrf_token %}
+                        <form action="#" method="post">
                             <div class="contact-form__two">
                                 <div class="contact-inner">
-                                    <input name="name" type="text" placeholder="Ad *" 
-                                    name="name" required minlength="3" 
-                                    oninvalid="this.setCustomValidity('Adınız minimum 3 hərfdən ibarət ola bilər.')"
-                                    oninput="this.setCustomValidity('')">
+                                    <input name="name" type="text" placeholder="Ad *">
                                 </div>
                                 <div class="contact-inner">
-                                    <input name="email" type="email" placeholder="Email *"
-                                    required minlength="10"
-                                    oninvalid="this.setCustomValidity('Elektron poçt ünvanınızı düzgün daxil edin.')"
-                                    oninput="this.setCustomValidity('')">
+                                    <input name="email" type="email" placeholder="Email *">
                                 </div>
                                 <div class="contact-inner">
-                                    <input name="phone" type="text" placeholder="Əlaqə nömrəsi *" name="phone" required minlength="10"
-                                    oninvalid="this.setCustomValidity('Telefon nömrənizi düzgün daxil edin.')"
-                                    oninput="this.setCustomValidity('')" >
+                                    <input name="number" type="text" placeholder="Əlaqə nömrəsi *">
                                 </div>
                                 <div class="comment-submit-btn text-center">
-                                    <input class="ht-btn ht-btn-md" type="submit" value="Göndər">
+                                    <button class="ht-btn ht-btn-md" type="submit">Göndər</button>
                                 </div>
                             </div>
                         </form>
@@ -73,9 +63,10 @@
             </div>
         </div>
     </div>
-
+   
     <div class="feature-icon-wrapper section-space--ptb_100">
         <div class="container">
+
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title-wrap text-center section-space--mb_40">
@@ -92,17 +83,13 @@
                                 <div class="ht-box-icon style-02 single-svg-icon-box">
                                     <div class="icon-box-wrap">
                                         <div class="icon">
-                                            <div class="svg-icon" id="svg-1"
-                                                data-svg-icon="{% static 'assets/images/svg/linea-basic-heart.svg' %}">
-                                                <!-- <img src="{% static 'assets/images/svg/linea-basic-heart.svg' %}" alt=""> -->
+                                            <div class="svg-icon" id="svg-1" data-svg-icon="{% static 'assets/images/svg/linea-basic-heart.svg' %}">
+                                                <!-- <img src="assets/images/svg/linea-basic-heart.svg" alt=""> -->
                                             </div>
                                         </div>
                                         <div class="content">
                                             <h5 class="heading">İş və maddi gəlir əldə etmə zəmanəti</h5>
-                                            <div class="text">Aktiv təhsil planlarından hər hansı birini uğurla başa
-                                                vuran bütün tələbələrimiz işlə təmin olunma və ya tədris müddətində
-                                                ödədiyi məbləği mərkəz tərəfindən veriləcək olan işləri yerinə
-                                                yetirməklə geri əldə
+                                            <div class="text">Aktiv təhsil planlarından hər hansı birini uğurla başa vuran bütün tələbələrimiz işlə təmin olunma və ya tədris müddətində ödədiyi məbləği mərkəz tərəfindən veriləcək olan işləri yerinə yetirməklə geri əldə
                                                 etmə zəmanəti verilir
                                             </div>
                                         </div>
@@ -115,18 +102,14 @@
                                     <!-- ht-box-icon Start -->
                                     <div class="icon-box-wrap">
                                         <div class="icon">
-                                            <div class="svg-icon" id="svg-3"
-                                                data-svg-icon="{% static 'assets/images/svg/linea-basic-alarm.svg' %}">
-                                                <!-- <img src="{% static 'assets/images/svg/linea-basic-alarm.svg' %}" alt=""> -->
-                                                </div>
+                                            <div class="svg-icon" id="svg-3" data-svg-icon="{% static 'assets/images/svg/linea-basic-alarm.svg' %}">
+                                                <!-- <img src="assets/images/svg/linea-basic-alarm.svg" alt=""> -->
+                                            </div>
                                         </div>
                                         <div class="content">
                                             <h5 class="heading">Pragmatik təhsil modeli</h5>
                                             <div class="text">
-                                                Tələbərimiz tədris zamanı birbaşa iş dünyasında tələb olunan
-                                                problemlərinin həlli üzərində işləyərək öyrənəcəklər. Bu model sayəsində
-                                                tələbələrimiz artıq şirkətlərdə təcrübəçi olaraq deyil birbaşa təcrübəli
-                                                əməkdaş olabilmək kimi ciddi üstünlük əldə edəcəklər.
+                                                Tələbərimiz tədris zamanı birbaşa iş dünyasında tələb olunan problemlərinin həlli üzərində işləyərək öyrənəcəklər. Bu model sayəsində tələbələrimiz artıq şirkətlərdə təcrübəçi olaraq deyil birbaşa təcrübəli əməkdaş olabilmək kimi ciddi üstünlük əldə edəcəklər.
                                             </div>
                                         </div>
                                     </div>
@@ -139,18 +122,14 @@
                                     <!-- ht-box-icon Start -->
                                     <div class="icon-box-wrap">
                                         <div class="icon">
-                                            <div class="svg-icon" id="svg-6"
-                                                data-svg-icon="{% static 'assets/images/svg/linea-basic-spread-text-bookmark.svg' %}">
-                                                <!-- <img src="{% static 'assets/images/svg/linea-basic-spread-text-bookmark.svg' %}" alt=""> -->
+                                            <div class="svg-icon" id="svg-6" data-svg-icon="{% static 'assets/images/svg/linea-basic-spread-text-bookmark.svg' %}">
+                                                <!-- <img src="assets/images/svg/linea-basic-spread-text-bookmark.svg" alt=""> -->
                                             </div>
                                         </div>
                                         <div class="content">
                                             <h5 class="heading">İş dünyasına yaxınlıq</h5>
                                             <div class="text">
-                                                Mərkəzimizdə mütəmadi olaraq yerli IT şırkətlərinin təqdimatları və
-                                                şirkət əməkdaşları ilə görüşlər keçiriləcək.Bu sayədə tələbələrimiz
-                                                gələcəkdəki iş mühitləri və əməkdaşları ilə birə bir ünsiyyətdə olma və
-                                                onların təcrübələrindən faydalanma şansı əldə
+                                                Mərkəzimizdə mütəmadi olaraq yerli IT şırkətlərinin təqdimatları və şirkət əməkdaşları ilə görüşlər keçiriləcək.Bu sayədə tələbələrimiz gələcəkdəki iş mühitləri və əməkdaşları ilə birə bir ünsiyyətdə olma və onların təcrübələrindən faydalanma şansı əldə
                                                 edəcəklər
                                             </div>
                                         </div>
@@ -164,36 +143,31 @@
                                     <div class="icon-box-wrap">
                                         <div class="icon">
                                             <div class="svg-icon" id="svg-2" data-svg-icon="{% static 'assets/images/svg/linea-basic-case.svg' %}">
-                                                <!-- <img src="{% static 'assets/images/svg/linea-basic-case.svg' %}" alt=""> -->
+                                                <!-- <img src="assets/images/svg/linea-basic-case.svg" alt=""> -->
                                             </div>
                                         </div>
                                         <div class="content">
                                             <h5 class="heading">Həftəlik əlavə təlimlər</h5>
-                                            <div class="text">Proqramçılara əlavə xüsusiyyət və qabiliyyətlər
-                                                qazandırmaq məqsədi ilə hər həftənin şənbə günü sektorda təcrübəli olan
-                                                insanların iştirakı ilə seminar,workshop və ya əlavə təlimlər təşkil
-                                                olunacaq.
+                                            <div class="text">Proqramçılara əlavə xüsusiyyət və qabiliyyətlər qazandırmaq məqsədi ilə hər həftənin şənbə günü sektorda təcrübəli olan insanların iştirakı ilə seminar,workshop və ya əlavə təlimlər təşkil olunacaq.
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
+                            
                             <div class="col-lg-4 col-md-6 wow move-up">
                                 <div class="ht-box-icon style-02 single-svg-icon-box">
                                     <!-- ht-box-icon Start -->
                                     <div class="icon-box-wrap">
                                         <div class="icon">
                                             <div class="svg-icon" id="svg-4" data-svg-icon="{% static 'assets/images/svg/linea-basic-geolocalize-05.svg' %}">
-                                                <!-- <img src="{% static 'assets/images/svg/linea-basic-geolocalize-05.svg' %}" alt=""> -->
+                                                <!-- <img src="assets/images/svg/linea-basic-geolocalize-05.svg" alt=""> -->
                                             </div>
                                         </div>
                                         <div class="content">
                                             <h5 class="heading">7/24 fəaliyyət göstərən mərkəz</h5>
                                             <div class="text">
-                                                Tələbələrimiz zaman məhdudiyyəti olmadan mərkəzimizdən istifadə edə
-                                                biləcəklər. Rahat və əyləncəli mühitdə təhsil keyfiyyətlərini artırmaq
-                                                çox daha asan olacaq
+                                                Tələbələrimiz zaman məhdudiyyəti olmadan mərkəzimizdən istifadə edə biləcəklər. Rahat və əyləncəli mühitdə təhsil keyfiyyətlərini artırmaq çox daha asan olacaq
                                             </div>
                                         </div>
                                     </div>
@@ -206,15 +180,13 @@
                                     <div class="icon-box-wrap">
                                         <div class="icon">
                                             <div class="svg-icon" id="svg-5" data-svg-icon="{% static 'assets/images/svg/linea-ecommerce-money.svg' %}">
-                                                <!-- <img src="{% static 'assets/images/svg/linea-ecommerce-money.svg' %}" alt=""> -->
+                                                <!-- <img src="assets/images/svg/linea-ecommerce-money.svg" alt=""> -->
                                             </div>
                                         </div>
                                         <div class="content">
                                             <h5 class="heading">Dəstək komandası</h5>
                                             <div class="text">
-                                                Mərkəzimizdə fəaliyyət göstərən proqramçı komandası hər zaman
-                                                tələbələrimizin problemlərininin aradan qaldırılması üçün onlara komanda
-                                                rəhbərliyi edəcəklər.
+                                                Mərkəzimizdə fəaliyyət göstərən proqramçı komandası hər zaman tələbələrimizin problemlərininin aradan qaldırılması üçün onlara komanda rəhbərliyi edəcəklər.
                                             </div>
                                         </div>
                                     </div>
@@ -236,8 +208,8 @@
 </div>
 
 <div class="carousel-sliders-wrapper section-space--ptb_100">
-    {% load static %}   
     <div class="container">
+        {% load static %}
         <div class="package">
             <h3>Tədris paketləri</h3>
         </div>
@@ -253,14 +225,11 @@
                                         <p>Foundation</p>
                                     </div>
                                     <div class="text">
-                                        Harvard Universitetinin CS50 kurrikulumu əsasında hazırlanmış tədris metodudur.
-                                        Bu tədris paketi daxilində tələbələr böyük problərin alqoritmlər vasitəsilə
-                                        asanlıqla həll oluna biləcəyini, proqramlaşdırmanın ümumi fəlsəfəsini və
-                                        proqramların arxa planda
+                                        Harvard Universitetinin CS50 kurrikulumu əsasında hazırlanmış tədris metodudur. Bu tədris paketi daxilində tələbələr böyük problərin alqoritmlər vasitəsilə asanlıqla həll oluna biləcəyini, proqramlaşdırmanın ümumi fəlsəfəsini və proqramların arxa planda
                                         necə işlədiyini çox əyləncəli tətbiqlər vasitəsilə öyrənəcəklər.
                                     </div>
                                     <div class="pricing-table__footer">
-                                        <a href="/foundation" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
+                                        <a href="#" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
                                     </div>
                                 </div>
                             </div>
@@ -273,13 +242,10 @@
                                         <p>HTML & CSS</p>
                                     </div>
                                     <div class="text">
-                                        Verilən dizaynı çox sürətli şəkildə HTML formatına çevirə bilmək üçün tələb
-                                        olunan bütün HTML və CSS funksionallığı ilə yanaşı tələbələrə kod yazma
-                                        sürətlərini artıra biləcək əlavə konsepsiyalar, framework-lər və kodlama
-                                        üslubları öyrədilir.
+                                        Verilən dizaynı çox sürətli şəkildə HTML formatına çevirə bilmək üçün tələb olunan bütün HTML və CSS funksionallığı ilə yanaşı tələbələrə kod yazma sürətlərini artıra biləcək əlavə konsepsiyalar, framework-lər və kodlama üslubları öyrədilir.
                                     </div>
                                     <div class="pricing-table__footer">
-                                        <a href="/html-css" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
+                                        <a href="#" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
                                     </div>
                                 </div>
                             </div>
@@ -292,14 +258,11 @@
                                         <p>Javascript</p>
                                     </div>
                                     <div class="text">
-                                        ES6 standartları çərçivəsində Javascript-in dil olaraq bütün xüsusiyyətləri
-                                        əhatə olunur. Bundan əlavə Javascript kitabxana istehsal etmə məntiqi,
-                                        Javascript frameworklərinin(əsasən React JS) işləmə fəlsəfəsi və tətbiqi, eyni
-                                        zamanda bu dilə məxsus köməkçi
+                                        ES6 standartları çərçivəsində Javascript-in dil olaraq bütün xüsusiyyətləri əhatə olunur. Bundan əlavə Javascript kitabxana istehsal etmə məntiqi, Javascript frameworklərinin(əsasən React JS) işləmə fəlsəfəsi və tətbiqi, eyni zamanda bu dilə məxsus köməkçi
                                         alətlərdən istifadə olunması öyrədilir.
                                     </div>
                                     <div class="pricing-table__footer">
-                                        <a href="/javascript" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
+                                        <a href="#" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
                                     </div>
                                 </div>
                             </div>
@@ -312,14 +275,11 @@
                                         <p>C#</p>
                                     </div>
                                     <div class="text">
-                                        Obyekt yönümlü paradiqmanın ən yaxşı tətbiq olunduğu dillərdən olan C# orta və
-                                        böyük miqyaslı tətbiqlərin yazıla bilməsi üçün çox münbit bir mühit təmin edir
-                                        (.Net platforması). Bundan əlavə Microsoftun yeni tətbiq etməyə başladığı
-                                        multiplatforma Core
+                                        Obyekt yönümlü paradiqmanın ən yaxşı tətbiq olunduğu dillərdən olan C# orta və böyük miqyaslı tətbiqlərin yazıla bilməsi üçün çox münbit bir mühit təmin edir (.Net platforması). Bundan əlavə Microsoftun yeni tətbiq etməyə başladığı multiplatforma Core
                                         konsepsiyası ilə fərqli platformlar üçün tətbiqlər yaza biləcəklər.
                                     </div>
                                     <div class="pricing-table__footer">
-                                        <a href="/csharp" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
+                                        <a href="#" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
                                     </div>
                                 </div>
                             </div>
@@ -332,14 +292,11 @@
                                         <p>PHP</p>
                                     </div>
                                     <div class="text">
-                                        Açıq qaynaqlı və multiplatforma dəstəkli dil olan PHP öyrənməsi rahat, geniş
-                                        dakumentasiyaya sahib bir dildir. Tələbələr bu dil vasitəsi ilə rahatlıqla veb
-                                        sistemlər yaza bilmə qabiliyyətinə və PHP-nin Laravel və digər frameworklərinin
-                                        işləmə prinsiplərinə
+                                        Açıq qaynaqlı və multiplatforma dəstəkli dil olan PHP öyrənməsi rahat, geniş dakumentasiyaya sahib bir dildir. Tələbələr bu dil vasitəsi ilə rahatlıqla veb sistemlər yaza bilmə qabiliyyətinə və PHP-nin Laravel və digər frameworklərinin işləmə prinsiplərinə
                                         dərindən yiyələnəcəklər.
                                     </div>
                                     <div class="pricing-table__footer">
-                                        <a href="/php" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
+                                        <a href="#" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
                                     </div>
                                 </div>
                             </div>
@@ -352,13 +309,10 @@
                                         <p>Python</p>
                                     </div>
                                     <div class="text">
-                                        Python hal hazırda dünyada ən çox öyrənilən dillərdən biridir. Bunun səbəbi
-                                        Python-un çox geniş əhatədə tətbiq edilə bilməsidir. Tələbələr Python Core
-                                        öyrənməklə və veb sahəsində tətbiq etməklə bu dilin digər sahələrdə də
-                                        istifadəsinə hazır hala gələcəklər.
+                                        Python hal hazırda dünyada ən çox öyrənilən dillərdən biridir. Bunun səbəbi Python-un çox geniş əhatədə tətbiq edilə bilməsidir. Tələbələr Python Core öyrənməklə və veb sahəsində tətbiq etməklə bu dilin digər sahələrdə də istifadəsinə hazır hala gələcəklər.
                                     </div>
                                     <div class="pricing-table__footer">
-                                        <a href="/python" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
+                                        <a href="#" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
                                     </div>
                                 </div>
                             </div>
@@ -371,13 +325,10 @@
                                         <p>Software deployment</p>
                                     </div>
                                     <div class="text">
-                                        Bu paket daxilində tələbələr, məhsulu istifadəyə hazır hala gətirmə, prosesdə
-                                        problem yaratmayacaq şəkildə yenilikləri tətbiq etmə və proqram versiyaları
-                                        arasındakı keçidləri zaman itkisi olmadan reallaşdıra bilmə bacarıqlarına
-                                        yiyələnəcəklər.
+                                        Bu paket daxilində tələbələr, məhsulu istifadəyə hazır hala gətirmə, prosesdə problem yaratmayacaq şəkildə yenilikləri tətbiq etmə və proqram versiyaları arasındakı keçidləri zaman itkisi olmadan reallaşdıra bilmə bacarıqlarına yiyələnəcəklər.
                                     </div>
                                     <div class="pricing-table__footer">
-                                        <a href="/software-deployment" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
+                                        <a href="#" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
                                     </div>
                                 </div>
                             </div>
@@ -387,15 +338,13 @@
                                 <div class="carousel-slider__content text-center">
                                     <img src="{% static 'assets/images/timeline/cybersecurity.png' %}">
                                     <div class="pricing-table__price-wrap">
-                                        <p>Cybersecurity For Developers</p>
+                                        <p>Cybersecurity</p>
                                     </div>
                                     <div class="text">
-                                        İstənilən tətbiq üçün təhlükəsizlik çox əhəmiyyətlidir. Bu səbəbdən
-                                        tələbələrimiz təyin olunmuş mərhələli tapşırıqları yerinə yetirməklə, yazdıqları
-                                        proqram və tətbiqlərin təhlükəsizliyini təmin edə biləcəklər.
+                                        İstənilən tətbiq üçün təhlükəsizlik çox əhəmiyyətlidir. Bu səbəbdən tələbələrimiz təyin olunmuş mərhələli tapşırıqları yerinə yetirməklə, yazdıqları proqram və tətbiqlərin təhlükəsizliyini təmin edə biləcəklər.
                                     </div>
                                     <div class="pricing-table__footer">
-                                        <a href="/cybersecurity" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
+                                        <a href="#" class="ht-btn ht-btn-default btn--secondary">Ətraflı</a>
                                     </div>
                                 </div>
                             </div>
@@ -409,8 +358,8 @@
 </div>
 
 <section class="roadmap section-space--ptb_100">
-    {% load static %}   
     <div class="container">
+        {% load static %}
         <div class="row">
             <div class="col-lg-12">
                 <!-- section-title-wrap Start -->
@@ -422,251 +371,51 @@
         </div>
     </div>
     <div class="gradation-process-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                <div class="gradation-title-wrapper">
-                                    <div class="full-widt gradation-title-wrap">
-                                        <h5 class="heading">Front-End Development</h5>
-                                    </div>
+        <div class="pricing-table-content-area">
+            <div class="container">
+                <div class="row pricing-table-one">
+                    <div class="col-12 col-md-6 col-sm-12 col-xs-12 col-lg-6 col-xl-6 pricing-table pricing-table--popular">
+                        <div class="pricing-table__inner">
+                            <div class="pricing-table__header">
+                                <h5 class="header">Frontend Development</h5>
+                            </div>
+                            <div class="pricing-table__body">
+                                <ul class="pricing-table__list text-left">
+                                    <li><h6 class="heading"><a href="/foundation">Foundation</a></h6></li>
+                                    <li><div class="down-arrow"><img src="{% static 'assets/images/svg/down.svg' %}" alt=""></div></li>
+                                    <li><h6 class="heading"><a href="/html-css">HTML & CSS</a></h6></li>
+                                    <li><div class="down-arrow"><img src="{% static 'assets/images/svg/down.svg' %}" alt=""></div></li>
+                                    <li><h6 class="heading"><a href="/javascript">Javascript</a></h6></li>
+                                    <li><div class="down-arrow"><img src="{% static 'assets/images/svg/down.svg' %}" alt=""></div></li>
+                                    <li><h6 class="heading"><a href="/software-deployment">Software deployment</a></h6></li>
+                                    <li><div class="down-arrow"><img src="{% static 'assets/images/svg/down.svg' %}" alt=""></div></li>
+                                    <li><h6 class="heading"><a href="/cybersecurity">Cybersecurity For Developers</a></h6></li>
+                                </ul>
+                                <div class="pricing-table__footer">
+                                    <a href="#" class="ht-btn  ht-btn-md ">Ətraflı</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="ht-gradation style-01">
-                        <!-- Single item gradation Start -->
-                        <div class="item item-1 animate  wow fadeInRight" data-wow-delay="0.1s"
-                            style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInRight;">
-                            <div class="line"></div>
-                            <div class="circle-wrap">
-                                <div class="mask">
-                                    <div class="wave-pulse wave-pulse-1"></div>
-                                    <div class="wave-pulse wave-pulse-2"></div>
-                                    <div class="wave-pulse wave-pulse-3"></div>
-                                </div>
-
-                                <h6 class="circle">1</h6>
+                    <div class="col-12 col-md-6 col-sm-12 col-xs-12 col-lg-6 col-xl-6 pricing-table pricing-table--popular">
+                        <div class="pricing-table__inner">
+                            <div class="pricing-table__header">
+                                <h5 class="header">Backend Development</h5>
                             </div>
-
-                            <div class="content-wrap">
-
-                                <h6 class="heading"><a href="/foundation">Foundation</a></h6>
-
-                            </div>
-                        </div>
-                        <!-- Single item gradation End -->
-
-                        <!-- Single item gradation Start -->
-                        <div class="item item-1 animate  wow fadeInRight" data-wow-delay="0.15s"
-                            style="visibility: visible; animation-delay: 0.15s; animation-name: fadeInRight;">
-                            <div class="line"></div>
-                            <div class="circle-wrap">
-                                <div class="mask">
-                                    <div class="wave-pulse wave-pulse-1"></div>
-                                    <div class="wave-pulse wave-pulse-2"></div>
-                                    <div class="wave-pulse wave-pulse-3"></div>
-                                </div>
-
-                                <h6 class="circle">2</h6>
-                            </div>
-
-                            <div class="content-wrap">
-
-                                <h6 class="heading"><a href="/html-css">HTML &amp; CSS</a></h6>
-
-                            </div>
-                        </div>
-                        <!-- Single item gradation End -->
-
-                        <!-- Single item gradation Start -->
-                        <div class="item item-1 animate  wow fadeInRight" data-wow-delay="0.20s"
-                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
-                            <div class="line"></div>
-                            <div class="circle-wrap">
-                                <div class="mask">
-                                    <div class="wave-pulse wave-pulse-1"></div>
-                                    <div class="wave-pulse wave-pulse-2"></div>
-                                    <div class="wave-pulse wave-pulse-3"></div>
-                                </div>
-
-                                <h6 class="circle">3</h6>
-                            </div>
-
-                            <div class="content-wrap">
-
-                                <h6 class="heading"><a href="/javascript">Javascript</a></h6>
-
-                            </div>
-                        </div>
-                        <!-- Single item gradation End -->
-
-                        <!-- Single item gradation Start -->
-                        <div class="item item-1 animate wow fadeInRight" data-wow-delay="0.25s"
-                            style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInRight;">
-                            <div class="line"></div>
-                            <div class="circle-wrap">
-                                <div class="mask">
-                                    <div class="wave-pulse wave-pulse-1"></div>
-                                    <div class="wave-pulse wave-pulse-2"></div>
-                                    <div class="wave-pulse wave-pulse-3"></div>
-                                </div>
-
-                                <h6 class="circle">4</h6>
-                            </div>
-
-                            <div class="content-wrap">
-
-                                <h6 class="heading"><a href="/software-deployment">Software deployment</a></h6>
-
-                            </div>
-                        </div>
-                        <!-- Single item gradation End -->
-
-                        <!-- Single item gradation Start -->
-                        <div class="item item-1 animate wow fadeInRight" data-wow-delay="0.25s"
-                            style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInRight;">
-                            <div class="line"></div>
-                            <div class="circle-wrap">
-                                <div class="mask">
-                                    <div class="wave-pulse wave-pulse-1"></div>
-                                    <div class="wave-pulse wave-pulse-2"></div>
-                                    <div class="wave-pulse wave-pulse-3"></div>
-                                </div>
-
-                                <h6 class="circle">5</h6>
-                            </div>
-
-                            <div class="content-wrap">
-
-                                <h6 class="heading"><a href="/cybersecurity"> Cyber Security For Developers</a></h6>
-
-                            </div>
-                        </div>
-                        <!-- Single item gradation End -->
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                <div class="gradation-title-wrapper-btn section-space--mb_60">
-                                    <div class="link-btn">
-                                        <a href="front-end.html">Ətraflı</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                <div class="gradation-title-wrapper">
-                                    <div class="full-widt gradation-title-wrap">
-                                        <h5 class="heading">Backend Development</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ht-gradation style-01">
-                        <!-- Single item gradation Start -->
-                        <div class="item item-1 animate  wow fadeInRight" data-wow-delay="0.1s"
-                            style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInRight;">
-                            <div class="line"></div>
-                            <div class="circle-wrap">
-                                <div class="mask">
-                                    <div class="wave-pulse wave-pulse-1"></div>
-                                    <div class="wave-pulse wave-pulse-2"></div>
-                                    <div class="wave-pulse wave-pulse-3"></div>
-                                </div>
-
-                                <h6 class="circle">1</h6>
-                            </div>
-
-                            <div class="content-wrap">
-
-                                <h6 class="heading"><a href="/foundation">Foundation</a></h6>
-
-                            </div>
-                        </div>
-                        <!-- Single item gradation End -->
-
-                        <!-- Single item gradation Start -->
-                        <div class="item item-1 animate  wow fadeInRight" data-wow-delay="0.15s"
-                            style="visibility: visible; animation-delay: 0.15s; animation-name: fadeInRight;">
-                            <div class="line"></div>
-                            <div class="circle-wrap">
-                                <div class="mask">
-                                    <div class="wave-pulse wave-pulse-1"></div>
-                                    <div class="wave-pulse wave-pulse-2"></div>
-                                    <div class="wave-pulse wave-pulse-3"></div>
-                                </div>
-
-                                <h6 class="circle">2</h6>
-                            </div>
-
-                            <div class="content-wrap">
-
-                                <h6 class="heading"><a href="/python"> Python</a> || <a href="/php">Php</a> || <a href="/csharp">C#</a></h6>
-
-                            </div>
-                        </div>
-                        <!-- Single item gradation End -->
-
-                        <!-- Single item gradation Start -->
-                        <div class="item item-1 animate  wow fadeInRight" data-wow-delay="0.20s"
-                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
-                            <div class="line"></div>
-                            <div class="circle-wrap">
-                                <div class="mask">
-                                    <div class="wave-pulse wave-pulse-1"></div>
-                                    <div class="wave-pulse wave-pulse-2"></div>
-                                    <div class="wave-pulse wave-pulse-3"></div>
-                                </div>
-
-                                <h6 class="circle">3</h6>
-                            </div>
-
-                            <div class="content-wrap">
-
-                                <h6 class="heading"><a href="/software-deployment">Software deployment</a></h6>
-
-                            </div>
-                        </div>
-                        <!-- Single item gradation End -->
-
-                        <!-- Single item gradation Start -->
-                        <div class="item item-1 animate wow fadeInRight" data-wow-delay="0.25s"
-                            style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInRight;">
-                            <div class="line"></div>
-                            <div class="circle-wrap">
-                                <div class="mask">
-                                    <div class="wave-pulse wave-pulse-1"></div>
-                                    <div class="wave-pulse wave-pulse-2"></div>
-                                    <div class="wave-pulse wave-pulse-3"></div>
-                                </div>
-
-                                <h6 class="circle">4</h6>
-                            </div>
-
-                            <div class="content-wrap">
-
-                                <h6 class="heading"><a href="/cybersecurity"> Cybersecurity for Developers</a></h6>
-
-                            </div>
-                        </div>
-                        <!-- Single item gradation End -->
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                                <div class="gradation-title-wrapper-btn section-space--mb_60">
-                                    <div class="link-btn">
-                                        <a href="back-end.html">Ətraflı</a>
-                                    </div>
+                            <div class="pricing-table__body">
+                                <ul class="pricing-table__list text-left">
+                                    <li><h6 class="heading"><a href="/foundation">Foundation</a></h6></li>
+                                    <li><div class="down-arrow"><img src="{% static 'assets/images/svg/down.svg' %}" alt=""></div></li>
+                                    <li><h6 class="heading"><a href="/python">Python</a> || <a href="/php">PHP</a> || <a href="/csharp">C#</a></h6></li>
+                                    <li><div class="down-arrow"><img src="{% static 'assets/images/svg/down.svg' %}" alt=""></div></li>
+                                    <li><h6 class="heading"><a href="/software-deployment">Software deployment</a></h6></li>
+                                    <li><div class="down-arrow"><img src="{% static 'assets/images/svg/down.svg' %}" alt=""></div></li>
+                                    <li><h6 class="heading"><a href="/cybersecurity">Cybersecurity For Developers</a></h6></li>
+                                    <li><div class="down-arrow"><img src="" alt=""></div></li>
+                                    <li><h6 class="heading"><a href="#"></a></h6></li>
+                                </ul>
+                                <div class="pricing-table__footer">
+                                    <a href="#" class="ht-btn  ht-btn-md ">Ətraflı</a>
                                 </div>
                             </div>
                         </div>
@@ -678,9 +427,8 @@
 </section>
 
 <div class="accordion-wrapper section-space--ptb_100">
-    {% load static %}   
     <div class="container">
-
+        {% load static %}
         <div class="row">
             <div class="col-lg-12">
                 <!-- section-title-wrap Start -->
@@ -698,19 +446,15 @@
                         <div class="card">
                             <div class="card-header" id="headingTwo">
                                 <h5 class="mb-0">
-                                    <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                                        aria-expanded="false" aria-controls="collapseTwo">
+                                    <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                         Məzun olduqdan sonra nə əldə edəcəm?<span> <i class="fas fa-chevron-down"></i>
                                             <i class="fas fa-chevron-up"></i> </span>
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                data-parent="#accordion">
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                                 <div class="card-body">
-                                    <p>Mitech takes into consideration every little detail to make sure the system run
-                                        smoothly and responsively. Mitech employs a new technique called Minified
-                                        Technology for securing customers' database & building up
+                                    <p>Mitech takes into consideration every little detail to make sure the system run smoothly and responsively. Mitech employs a new technique called Minified Technology for securing customers' database & building up
                                         highly confidential firewalls. </p>
                                 </div>
                             </div>
@@ -718,20 +462,16 @@
                         <div class="card">
                             <div class="card-header" id="headingThree">
                                 <h5 class="mb-0">
-                                    <button class="btn-link collapsed" data-toggle="collapse"
-                                        data-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        İmtahanlar hansı formatda olacaq? <span> <i class="fas fa-chevron-down"></i>
+                                    <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        İmtahanlar hansı formatda olacaq? <span> <i
+                                                class="fas fa-chevron-down"></i>
                                             <i class="fas fa-chevron-up"></i> </span>
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                data-parent="#accordion">
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                                 <div class="card-body">
-                                    <p>We reduce redundant complex calculations and lengthy erroneous code texts with
-                                        simpler ones to ensure Mitech would run seamlessly and the design is reserved in
-                                        its best form when viewed from a wide range of mobile
+                                    <p>We reduce redundant complex calculations and lengthy erroneous code texts with simpler ones to ensure Mitech would run seamlessly and the design is reserved in its best form when viewed from a wide range of mobile
                                         devices & browsers. </p>
                                 </div>
                             </div>
@@ -739,40 +479,31 @@
                         <div class="card">
                             <div class="card-header" id="headingFour">
                                 <h5 class="mb-0">
-                                    <button class="collapsed" data-toggle="collapse" data-target="#collapseFour"
-                                        aria-expanded="false" aria-controls="collapseFour">
-                                        Nə vaxtdan maddi gəlir əldə edə bilərəm?<span> <i
-                                                class="fas fa-chevron-down"></i>
+                                    <button class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Nə vaxtdan maddi gəlir əldə edə bilərəm?<span> <i class="fas fa-chevron-down"></i>
                                             <i class="fas fa-chevron-up"></i> </span>
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                                data-parent="#accordion">
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                                 <div class="card-body">
-                                    <p>Our service offerings to enhance customer experience throughout the product
-                                        lifecycle includes – test and repair, service management, and end-to-end
-                                        warranty management. </p>
+                                    <p>Our service offerings to enhance customer experience throughout the product lifecycle includes – test and repair, service management, and end-to-end warranty management. </p>
                                 </div>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-header" id="headingFive">
                                 <h5 class="mb-0">
-                                    <button class="collapsed" data-toggle="collapse" data-target="#collapseFive"
-                                        aria-expanded="false" aria-controls="collapseFive">
+                                    <button class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                         İngilis dili biliyim hansı səviyyədə olmalıdır? <span> <i
                                                 class="fas fa-chevron-down"></i>
                                             <i class="fas fa-chevron-up"></i> </span>
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-                                data-parent="#accordion">
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
                                 <div class="card-body">
-                                    <p>We are available to freelance hiring with on-demand extra services, including
-                                        WordPress site design/ redesign, WordPress installation, all-in-one
-                                        customization, video production, video editing and stop motion
+                                    <p>We are available to freelance hiring with on-demand extra services, including WordPress site design/ redesign, WordPress installation, all-in-one customization, video production, video editing and stop motion
                                         video producing.</p>
                                 </div>
                             </div>
@@ -790,8 +521,7 @@
                             <div class="card">
                                 <div class="card-header" id="faq_2">
                                     <h5 class="mb-0">
-                                        <button class="btn-link collapsed" data-toggle="collapse" data-target="#faq_two"
-                                            aria-expanded="false" aria-controls="faq_two">
+                                        <button class="btn-link collapsed" data-toggle="collapse" data-target="#faq_two" aria-expanded="false" aria-controls="faq_two">
                                             Təhsil modulları ilə təhsil planları arasındakı fərq nədir?<span> <i
                                                     class="fas fa-chevron-down"></i>
                                                 <i class="fas fa-chevron-up"></i> </span>
@@ -800,9 +530,7 @@
                                 </div>
                                 <div id="faq_two" class="collapse" aria-labelledby="faq_2">
                                     <div class="card-body">
-                                        <p>Mitech takes into consideration every little detail to make sure the system
-                                            run smoothly and responsively. Mitech employs a new technique called
-                                            Minified Technology for securing customers' database & building
+                                        <p>Mitech takes into consideration every little detail to make sure the system run smoothly and responsively. Mitech employs a new technique called Minified Technology for securing customers' database & building
                                             up highly confidential firewalls. </p>
                                     </div>
                                 </div>
@@ -810,18 +538,16 @@
                             <div class="card">
                                 <div class="card-header" id="faq_3">
                                     <h5 class="mb-0">
-                                        <button class="btn-link collapsed" data-toggle="collapse"
-                                            data-target="#faq_three" aria-expanded="false" aria-controls="faq_three">
-                                            Müəllimlər kim olacaq? <span> <i class="fas fa-chevron-down"></i>
+                                        <button class="btn-link collapsed" data-toggle="collapse" data-target="#faq_three" aria-expanded="false" aria-controls="faq_three">
+                                            Müəllimlər kim olacaq? <span> <i
+                                                    class="fas fa-chevron-down"></i>
                                                 <i class="fas fa-chevron-up"></i> </span>
                                         </button>
                                     </h5>
                                 </div>
                                 <div id="faq_three" class="collapse" aria-labelledby="faq_3">
                                     <div class="card-body">
-                                        <p>We reduce redundant complex calculations and lengthy erroneous code texts
-                                            with simpler ones to ensure Mitech would run seamlessly and the design is
-                                            reserved in its best form when viewed from a wide range of
+                                        <p>We reduce redundant complex calculations and lengthy erroneous code texts with simpler ones to ensure Mitech would run seamlessly and the design is reserved in its best form when viewed from a wide range of
                                             mobile devices & browsers. </p>
                                     </div>
                                 </div>
@@ -829,18 +555,16 @@
                             <div class="card">
                                 <div class="card-header" id="faq_4">
                                     <h5 class="mb-0">
-                                        <button class="collapsed" data-toggle="collapse" data-target="#faq_four"
-                                            aria-expanded="false" aria-controls="faq_four">
-                                            Ödəniş hansı formada olacaq? <span> <i class="fas fa-chevron-down"></i>
+                                        <button class="collapsed" data-toggle="collapse" data-target="#faq_four" aria-expanded="false" aria-controls="faq_four">
+                                            Ödəniş hansı formada olacaq? <span> <i
+                                                    class="fas fa-chevron-down"></i>
                                                 <i class="fas fa-chevron-up"></i> </span>
                                         </button>
                                     </h5>
                                 </div>
                                 <div id="faq_four" class="collapse" aria-labelledby="faq_4" data-parent="#faq-toggles">
                                     <div class="card-body">
-                                        <p>We are available to freelance hiring with on-demand extra services, including
-                                            WordPress site design/ redesign, WordPress installation, all-in-one
-                                            customization, video production, video editing and stop motion
+                                        <p>We are available to freelance hiring with on-demand extra services, including WordPress site design/ redesign, WordPress installation, all-in-one customization, video production, video editing and stop motion
                                             video producing.</p>
                                     </div>
                                 </div>
@@ -848,8 +572,7 @@
                             <div class="card">
                                 <div class="card-header" id="faq_5">
                                     <h5 class="mb-0">
-                                        <button class="collapsed" data-toggle="collapse" data-target="#faq_five"
-                                            aria-expanded="false" aria-controls="faq_five">
+                                        <button class="collapsed" data-toggle="collapse" data-target="#faq_five" aria-expanded="false" aria-controls="faq_five">
                                             Dərslər hansı dildə tədris olunacaq? <span> <i
                                                     class="fas fa-chevron-down"></i>
                                                 <i class="fas fa-chevron-up"></i> </span>
@@ -858,9 +581,7 @@
                                 </div>
                                 <div id="faq_five" class="collapse" aria-labelledby="faq_5" data-parent="#faq-toggles">
                                     <div class="card-body">
-                                        <p>We are available to freelance hiring with on-demand extra services, including
-                                            WordPress site design/ redesign, WordPress installation, all-in-one
-                                            customization, video production, video editing and stop motion
+                                        <p>We are available to freelance hiring with on-demand extra services, including WordPress site design/ redesign, WordPress installation, all-in-one customization, video production, video editing and stop motion
                                             video producing.</p>
                                     </div>
                                 </div>
@@ -877,8 +598,8 @@
 <!--===========  feature-icon-wrapper  End =============-->
 <!--======== Tabs Wrapper Start ======== -->
 <div class="tabs-wrapper bg-gray section-space--ptb_100">
-    {% load static %}   
     <div class="container">
+        {% load static %}
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-title-wrapper text-center section-space--mb_60 wow move-up">
@@ -897,9 +618,7 @@
                                 <div class="col-lg-6 ">
                                     <div class="tab-history-image mt-30">
                                         <div class="single-popup-wrap">
-                                            <img class="img-fluid"
-                                                src="{% static 'assets/images/bg/home-processing-video-intro-slider-slide-01-image-01-570x350.jpg' %}"
-                                                alt="">
+                                            <img class="img-fluid" src="{% static 'assets/images/bg/home-processing-video-intro-slider-slide-01-image-01-570x350.jpg' %}" alt="">
                                             <div class="ht-popup-video video-button">
                                                 <div class="video-mark">
                                                     <div class="wave-pulse wave-pulse-1"></div>
@@ -916,22 +635,18 @@
                                 </div>
                                 <div class="col-lg-6 ">
                                     <div class="tab-content-inner  mt-30">
-                                        <div class="text mb-30">Pragmatech Təhsil və inkişaf mərkəzi praqmatik təhsil
-                                            modelinə əsaslanan tədris şirkətidir.
-                                            Praqmatik təhsil modeli nədir? Bu model təhsilin birbaşa iş dünyası ilə
-                                            inteqrasiasını təmin edərək tələbələrin
-                                            öyrənmə sürətlərini artırılmasını hədəfləyən təhsil modelidir.
+                                        <div class="text mb-30">Pragmatech Təhsil və inkişaf mərkəzi praqmatik təhsil modelinə əsaslanan tədris şirkətidir. 
+                                            Praqmatik təhsil modeli nədir? Bu model təhsilin birbaşa iş dünyası ilə inteqrasiasını təmin edərək tələbələrin 
+                                            öyrənmə sürətlərini artırılmasını hədəfləyən təhsil modelidir. 
 
-                                            Hədəfimiz tələbələrin təhsilə qoyduqları investisiyanı qısa müddətdə geri
-                                            qazanma və birbaşa iş dünyasına hazır
-                                            kadr halında məzun olmalarını təmin etməkdir.
-
+                                            Hədəfimiz tələbələrin təhsilə qoyduqları investisiyanı qısa müddətdə geri qazanma və birbaşa iş dünyasına hazır 
+                                            kadr halında məzun olmalarını təmin etməkdir. 
+                                            
                                             Pragmatech bu modeli necə tətbiq edir?
-
-                                            Şirkət daxilində fəaliyyət göstərən proqramçı komandası Pragmatechdə təhsil
-                                            alan tələbələrlə birbaşa ünsiyyətdədir.
+                                            
+                                            Şirkət daxilində fəaliyyət göstərən proqramçı komandası Pragmatechdə təhsil alan tələbələrlə birbaşa ünsiyyətdədir. 
                                             Tələbələr komandalara ayrılır və hər komanda bir Pragmatech proqramçısı ...
-                                        </div>
+                                            </div>
 
                                         </ul>
 
@@ -954,9 +669,10 @@
 </div>
 <!--======== Tabs Wrapper End ======== -->
 
+
 <div class="feature-images-wrapper bg-gray section-space--ptb_100">
-    {% load static %}   
     <div class="container">
+        {% load static %}
         <div class="row">
             <div class="col-lg-12">
                 <!-- section-title-wrap Start -->
@@ -977,14 +693,11 @@
                             <div class="ht-box-images style-01">
                                 <div class="image-box-wrap">
                                     <div class="box-image">
-                                        <img class="img-fulid"
-                                            src="{% static 'assets/images/icons/mitech-box-image-style-01-image-01-100x108.png' %}"
-                                            alt="">
+                                        <img class="img-fulid" src="{% static 'assets/images/icons/mitech-box-image-style-01-image-01-100x108.png' %}" alt="">
                                     </div>
                                     <div class="content">
                                         <h5 class="heading">Müsahibə </h5>
-                                        <div class="text">Mərkəzimizə müraciət edən şəxslər ilkin olaraq müsahibə
-                                            nəticəsində dəyərləndiriləcəklər.
+                                        <div class="text">Mərkəzimizə müraciət edən şəxslər ilkin olaraq müsahibə nəticəsində dəyərləndiriləcəklər.
                                         </div>
                                     </div>
                                 </div>
@@ -997,14 +710,11 @@
                             <div class="ht-box-images style-01">
                                 <div class="image-box-wrap">
                                     <div class="box-image">
-                                        <img class="img-fulid"
-                                            src="{% static 'assets/images/icons/mitech-box-image-style-01-image-02-100x108.png' %}"
-                                            alt="">
+                                        <img class="img-fulid" src="{% static 'assets/images/icons/mitech-box-image-style-01-image-02-100x108.png' %}" alt="">
                                     </div>
                                     <div class="content">
                                         <h5 class="heading">İngilis dili testi</h5>
-                                        <div class="text">Bütün tədris materiallarımız İngilis dilində olduğu üçün,
-                                            tələbələrimizin minimal texniki İngilis dili bilikləri yoxlanılacaqdır.
+                                        <div class="text">Bütün tədris materiallarımız İngilis dilində olduğu üçün, tələbələrimizin minimal texniki İngilis dili bilikləri yoxlanılacaqdır.
 
                                         </div>
                                     </div>
@@ -1018,14 +728,11 @@
                             <div class="ht-box-images style-01">
                                 <div class="image-box-wrap">
                                     <div class="box-image">
-                                        <img class="img-fulid"
-                                            src="{% static 'assets/images/icons/mitech-box-image-style-01-image-03-100x108.png' %}"
-                                            alt="">
+                                        <img class="img-fulid" src="{% static 'assets/images/icons/mitech-box-image-style-01-image-03-100x108.png' %}" alt="">
                                     </div>
                                     <div class="content">
                                         <h5 class="heading">Texniki test</h5>
-                                        <div class="text">Texniki testin keçirilməsində məqsəd, tələbələrin analiz və
-                                            məntiq qabiliyyətinin dəyərləndirilməsidir.
+                                        <div class="text">Texniki testin keçirilməsində məqsəd, tələbələrin analiz və məntiq qabiliyyətinin dəyərləndirilməsidir.  
                                         </div>
                                     </div>
                                 </div>
