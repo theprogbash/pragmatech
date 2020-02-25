@@ -42,19 +42,28 @@
                             <h5 class="mb-10">Müraciət et</h5>
                             <!-- <p class="text">Müracət üçün qeydiyyatdan keç!</p> -->
                         </div>
-                        <form action="#" method="post">
+                        <form action="{% url 'index' %}" method="post">
+                            {% csrf_token %}
                             <div class="contact-form__two">
                                 <div class="contact-inner">
-                                    <input name="name" type="text" placeholder="Ad *">
+                                    <input name="name" type="text" placeholder="Ad *" 
+                                    name="name" required minlength="3" 
+                                    oninvalid="this.setCustomValidity('Adınız minimum 3 hərfdən ibarət ola bilər.')"
+                                    oninput="this.setCustomValidity('')">
                                 </div>
                                 <div class="contact-inner">
-                                    <input name="email" type="email" placeholder="Email *">
+                                    <input name="email" type="email" placeholder="Email *"
+                                    required minlength="10"
+                                    oninvalid="this.setCustomValidity('Elektron poçt ünvanınızı düzgün daxil edin.')"
+                                    oninput="this.setCustomValidity('')">
                                 </div>
                                 <div class="contact-inner">
-                                    <input name="number" type="text" placeholder="Əlaqə nömrəsi *">
+                                    <input name="phone" type="text" placeholder="Əlaqə nömrəsi *" name="phone" required minlength="10"
+                                    oninvalid="this.setCustomValidity('Telefon nömrənizi düzgün daxil edin.')"
+                                    oninput="this.setCustomValidity('')" >
                                 </div>
                                 <div class="comment-submit-btn text-center">
-                                    <button class="ht-btn ht-btn-md" type="submit">Göndər</button>
+                                    <input class="ht-btn ht-btn-md" type="submit" value="Göndər">
                                 </div>
                             </div>
                         </form>
