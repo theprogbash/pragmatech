@@ -15,5 +15,5 @@ urlpatterns = [
     path('software-deployment', views.software_deployment, name='software-deployment'),
     path('cybersecurity', views.cybersecurity   , name='cybersecurity'),
     path('foundation', views.foundation, name='foundation'),
-    path('frontend', views.frontend, name='frontend')
+    path('frontend-development', views.frontend, name='frontend-development')
 ]
