@@ -14,5 +14,6 @@ urlpatterns = [
     path('python', views.python, name='python'),
     path('software-deployment', views.software_deployment, name='software-deployment'),
     path('cybersecurity', views.cybersecurity   , name='cybersecurity'),
-    path('foundation', views.foundation, name='foundation')
+    path('foundation', views.foundation, name='foundation'),
+    path('frontend', views.frontend, name='frontend')
 ]

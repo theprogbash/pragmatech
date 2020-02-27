@@ -160,6 +160,51 @@
 .down-arrow img {
     width: 100%;
 }
+
+
+.development .fun-fact--two .fun-fact__text {
+    color: #fff;
+}
+
+.development .fun-fact--one .fun-fact__count {
+    color: #003b8d;
+}
+
+.development .fun-fact--one .fun-fact__text {
+    color: #003b8d;
+}
+
+.development .portfolio-details-content  .text{
+    margin-bottom: 15px;
+}
+
+.development .vision-content .check-list {
+    margin-bottom: 15px;
+}
+
+.second-header {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.development .check-list .list-item::before {
+    font-size: 11px;
+    top: 7;
+}
+
+.development .check-list .list-item {
+    position: relative;
+    padding-left: 23px;
+    margin-bottom: 0px;
+}
+
+.development #collapse__12 .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
 /* .road-maps .timeline{
     list-style: none;
     padding: 20px;

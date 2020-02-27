@@ -13,7 +13,7 @@ body {
   font-weight: 400;
   visibility: visible;
   font-family: 'Averta Std';
-  color: #696969;
+  color: #000000;
   position: relative;
   background-color: #ffffff;
 }
@@ -218,7 +218,9 @@ ul {
 }
 
 .bg-theme-default {
-  background: #41e063;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-top: 1px solid #ddd;
 }
 
 .theme-bg-secondary {
@@ -2630,7 +2632,7 @@ input[type="checkbox"] {
   font-weight: 500;
 }
 .top-message a:hover {
-  color: #5336ff;
+  color: #003b8d;
 }
 
 /*============================== 
@@ -2727,7 +2729,7 @@ input[type="checkbox"] {
   color: #ffffff;
 }
 .navigation-menu--text_white > ul > li:hover > a > span, .navigation-menu--text_white > ul > li.active > a > span {
-  color: #ffffff;
+  color: #41e063;
 }
 
 .header-bottom-left-wrap .navigation-menu > ul > li:first-child {
@@ -3885,7 +3887,7 @@ input[type="checkbox"] {
 }
 .btn--secondary:hover {
   background-image: none;
-  background: #5336ff;
+  background: #003b8d;
 }
 .btn--black {
   background-image: none;
@@ -3939,10 +3941,10 @@ input[type="checkbox"] {
   right: 0;
   width: 0;
   height: 1px;
-  background-color: #5336ff;
+  background-color: #003b8d;
 }
 .hover-style-link:hover {
-  color: #5336ff;
+  color: #003b8d;
 }
 .hover-style-link:hover:after {
   left: 0;
@@ -4037,7 +4039,7 @@ input[type="checkbox"] {
   color: #41e063;
 }
 .btn-text:hover {
-  color: #d2a98e;
+  color: #41e063;
 }
 
 .single-button-group h5 {
@@ -4711,7 +4713,7 @@ input[type="checkbox"] {
   margin-top: 20px;
 }
 .ht-box-icon.style-02 .feature-btn a:hover {
-  color: #5336ff;
+  color: #003b8d;
 }
 .ht-box-icon.style-03 .icon-box-wrap {
   padding: 30px;
@@ -6679,7 +6681,7 @@ ol {
   transform: translateY(-5px);
 }
 .pricing-table-one .pricing-table--popular .pricing-table__inner {
-  border: 1px solid #dadada;
+  border: 1px solid #DCE6ED;
   padding: 49px 20px 51px;
 }
 

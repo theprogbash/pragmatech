@@ -60,3 +60,6 @@ def cybersecurity(request):
 
 def foundation(request):
     return render(request, 'pragmatechapp/foundation.html', {})
+
+def frontend(request):
+    return render(request, 'pragmatechapp/frontend-development.html', {})
