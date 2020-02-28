@@ -1,0 +1,61 @@
+{% extends 'pragmatechapp/base.html' %}
+{% block content %}
+<div class="site-wrapper-reveal">
+    {% load static %}
+    <div class="about-banner-wrap banner-space bg-img" data-bg="{% static 'assets/images/hero/home-appointment-hero-bg-image.jpg' %}">
+        <div class="container">
+            {% load static %}
+            <div class="row">
+                <div class="col-lg-8 ml-auto mr-auto">
+                    <div class="about-banner-content text-center">
+                        <h1 class="mb-15 text-white">Bizimlə əlaqə</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="contact">
+        <div class="contact-us-section-wrappaer section-space--pt_100 section-space--pb_70">
+            <div class="container">
+                {% load static %}
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-lg-6">
+                        <div class="conact-us-wrap-one mb-30">
+                            <h3 class="heading"><span class="text-color-primary">Pragmatech</span> sual və
+                                təkliflərinizə hər zaman açıqdır </h3>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-lg-6">
+                        <div class="contact-form-wrap">
+                            <form id="contact-form" action="#" method="post">
+                                <div class="contact-form">
+                                    <div class="contact-input">
+                                        <div class="contact-inner">
+                                            <input name="con_name" type="text" placeholder="Adınız *">
+                                        </div>
+                                        <div class="contact-inner">
+                                            <input name="con_email" type="email" placeholder="Email *">
+                                        </div>
+                                    </div>
+                                    <div class="contact-inner">
+                                        <input name="con_subject" type="text" placeholder="Mövzu">
+                                    </div>
+                                    <div class="contact-inner contact-message">
+                                        <textarea name="con_message" placeholder="Mesajınız..."></textarea>
+                                    </div>
+                                    <div class="submit-btn mt-20">
+                                        <button class="ht-btn ht-btn-md" type="submit">Göndər</button>
+                                        <p class="form-messege"></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

@@ -16,5 +16,6 @@ urlpatterns = [
     path('cybersecurity', views.cybersecurity   , name='cybersecurity'),
     path('foundation', views.foundation, name='foundation'),
     path('frontend-development', views.frontend, name='frontend-development'),
-    path('backend-development', views.backend, name='backend-development')
+    path('backend-development', views.backend, name='backend-development'),
+    path('contact', views.contact, name='contact'),
 ]

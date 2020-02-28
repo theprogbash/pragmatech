@@ -66,3 +66,6 @@ def frontend(request):
 
 def backend(request):
     return render(request, 'pragmatechapp/backend-development.html', {})
+
+def contact(request):
+    return render(request, 'pragmatechapp/contact.html', {})
