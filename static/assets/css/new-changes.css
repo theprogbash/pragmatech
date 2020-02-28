@@ -98,10 +98,6 @@
 }
 
 
-.ht-box-icon.style-02 .icon-box-wrap .content .text{
-    text-align: justify;
-}
-
 
 .road-maps{
     text-align: center;
@@ -204,6 +200,15 @@
     align-items: flex-start;
 }
 
+#package-syl .card-body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.extra-margin {
+    margin-bottom: 12px;
+}
 
 /* .road-maps .timeline{
     list-style: none;
