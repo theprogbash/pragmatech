@@ -2,7 +2,7 @@
 {% block content %}
 <div class="site-wrapper-reveal">
     {% load static %}
-    <div class="about-banner-wrap banner-space bg-img" data-bg="{% static 'assets/images/hero/home-appointment-hero-bg-image.jpg' %}">
+    <div class="about-banner-wrap banner-space bg-img" data-bg="{% 'assets/images/hero/home-appointment-hero-bg-image.jpg' %}">
         <div class="container">
             {% load static %}
             <div class="row">
@@ -14,7 +14,6 @@
             </div>
         </div>
     </div>
-
     <section class="development">
         <div class="vision-overview section-space--pt_40">
             <div class="container">
@@ -100,7 +99,6 @@
                                                 <li class="list-item">Flask. MVC. Autocomplete. Events. Ajax. JSON.</li>
                                                 <li class="list-item">Cookies. Sessions. Databases. SQL. Race Conditions.</li>
                                                 <li class="list-item">Bonus</li>
-                                                
                                             </ul>
                                         </div>
                                     </div>
@@ -117,7 +115,16 @@
                                     </div>
                                     <div id="collapse__11" class="collapse" aria-labelledby="heading__11" data-parent="#accordion_two">
                                         <div class="card-body">
-                                            <p>Mitech takes into consideration every little detail to make sure the system run smoothly and responsively. Mitech employs a new technique called Minified Technology for securing customers' database &amp; building up highly confidential firewalls. </p>
+                                            <ul class="check-list">
+                                                <li class="list-item">HTML Fundamentals</li>
+                                                <li class="list-item">CSS Fundamentals</li>
+                                                <li class="list-item">Conventions and Best Practises</li>
+                                                <li class="list-item">Making responsive layouts</li>
+                                                <li class="list-item">CSS Architecture</li>
+                                                <li class="list-item">CSS Preprocessors</li>
+                                                <li class="list-item">CSS Frameworks</li>
+                                                <li class="list-item">Bonus</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -202,7 +209,19 @@
                                     </div>
                                     <div id="collapse__13" class="collapse" aria-labelledby="heading__13" data-parent="#accordion_two">
                                         <div class="card-body">
-                                            <p>Our service offerings to enhance customer experience throughout the product lifecycle includes – test and repair, service management, and end-to-end warranty management. </p>
+                                            <ul class="check-list">
+                                                <li class="list-item">Infrastructure Setup</li>
+                                                <li class="list-item">Introduction to DevOps</li>
+                                                <li class="list-item">Software Version Control</li>
+                                                <li class="list-item">Continuous Deployment: Containerization with Docker</li>
+                                                <li class="list-item">Containerization with Docker: Ecosystem and Networking</li>
+                                                <li class="list-item">Configuration Management using Puppet</li>
+                                                <li class="list-item">Configuration Management using Ansible</li>
+                                                <li class="list-item">Continuous Testing using Selenium</li>
+                                                <li class="list-item">Continuous Integration using Jenkins</li>
+                                                <li class="list-item">Continuous Orchestration using Kubernetes</li>
+                                                <li class="list-item">Continuous Monitoring using Nagios</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -210,14 +229,39 @@
                                     <div class="card-header" id="heading__14">
                                         <h5 class="mb-0">
                                             <button class="collapsed" data-toggle="collapse" data-target="#collapse__14" aria-expanded="false" aria-controls="collapse__14">
-                                                Cybersecurity<span><i class="far fa-caret-circle-down"></i>
+                                                Cybersecurity for Developers<span><i class="far fa-caret-circle-down"></i>
                                         <i class="far fa-caret-circle-right"></i>  </span>
                                             </button>
                                         </h5>
                                     </div>
                                     <div id="collapse__14" class="collapse" aria-labelledby="heading__14" data-parent="#accordion_two">
                                         <div class="card-body">
-                                            <p>Our service offerings to enhance customer experience throughout the product lifecycle includes – test and repair, service management, and end-to-end warranty management. </p>
+                                            <ul class="check-list">
+                                                <li class="list-item">Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')</li>
+                                                <li class="list-item">Improper Input Validation</li>
+                                                <li class="list-item">Information Exposure</li>
+                                                <li class="list-item">Out-of-bounds Read</li>
+                                                <li class="list-item">Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')</li>
+                                                <li class="list-item">Use After Free</li>
+                                                <li class="list-item">Integer Overflow or Wraparound</li>
+                                                <li class="list-item">Cross-Site Request Forgery (CSRF)</li>
+                                                <li class="list-item">Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')</li>
+                                                <li class="list-item">Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')</li>
+                                                <li class="list-item">Out-of-bounds Write</li>
+                                                <li class="list-item">Improper Authentication</li>
+                                                <li class="list-item">NULL Pointer Dereference</li>
+                                                <li class="list-item">Incorrect Permission Assignment for Critical Resource</li>
+                                                <li class="list-item">Unrestricted Upload of File with Dangerous Type</li>
+                                                <li class="list-item">Improper Restriction of XML External Entity Reference</li>
+                                                <li class="list-item">Improper Control of Generation of Code ('Code Injection')</li>
+                                                <li class="list-item">Use of Hard-coded Credentials</li>
+                                                <li class="list-item">Uncontrolled Resource Consumption</li>
+                                                <li class="list-item">Missing Release of Resource after Effective Lifetime</li>
+                                                <li class="list-item">Untrusted Search Path</li>
+                                                <li class="list-item">Deserialization of Untrusted Data</li>
+                                                <li class="list-item">Improper Privilege Management</li>
+                                                <li class="list-item">Improper Certificate Validation</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -245,7 +289,10 @@
                                         <li class="list-item">Teorik biliklərin praktika və real problemlərin həlli ilə təkmilləşdirilməsi</li>
                                         <li class="list-item"> Sürətli və effektiv kod yazmaq üçün əlavə bacarıqların əldə edilməsi</li>
                                     </ul>
-                                    </p>Pragmatechdə tələbələr dərsdən əlavə qalan vaxtlarını Pragmatech Proqramçı Komandasının (Biz onlara Dəstək Komandası deyirik) nəzarətində real problemlərin həllində iştirak edərək teorik biliklərini tətbiq edəcəklər və bununla bərabər görəcəkləri işdən maddi gəlir əldə edə biləcəklər. Bundan əlavə tələbələrə proqramçı olaraq yaxşı yetişə bilmələri üçün həftənin şənbə günləri əlavə təlimlər və tədbirlər təşkil olunacaq. Bu təlimlər vasitəsi ilə tələbələr sektordakı təcrübəli insanların məsləhətlərindən faydalana biləcəklər.</p>
+                                    </p>Pragmatechdə tələbələr dərsdən əlavə qalan vaxtlarını Pragmatech Proqramçı Komandasının (Biz onlara Dəstək Komandası deyirik) nəzarətində real problemlərin həllində 
+                                    iştirak edərək teorik biliklərini tətbiq edəcəklər və bununla bərabər görəcəkləri işdən maddi gəlir əldə edə biləcəklər. Bundan əlavə 
+                                    tələbələrə proqramçı olaraq yaxşı yetişə bilmələri üçün həftəsonları əlavə təlimlər və tədbirlər təşkil olunacaq. Bu təlimlər vasitəsi 
+                                    ilə tələbələr sektordakı təcrübəli insanların məsləhətlərindən faydalana biləcəklər.</p>
                                 </div>
                             </div>
                         </div>
@@ -260,9 +307,9 @@
                         </div>
                         <div class="portfolio-details-content">
                             <div class="text">
-                                <p>Tələbələr Pragmatechin verdiyi zəmanətlərdən faydalana bilməsi üçün aşağıdakı şərtlərə əməl etməlidir. Bu şərtlərdən hər hansı birinə riayət olunmazsa zəmanət hüququndan məhrum olur</p>
+                                <p>Tələbələr Pragmatechin verdiyi zəmanətlərdən faydalana bilmək üçün aşağıdakı şərtlərə əməl etməlidirlər. Tələbə bu şərtlərdən hər hansı birinə riayət etməzsə zəmanət hüququndan məhrum olur</p>
                                 <ul class="check-list">
-                                    <li class="list-item">Tədris müddətində davamiyyət faizi 90% -in üzırindı olmalıdır</li>
+                                    <li class="list-item">Tədris müddətində davamiyyət faizi 90% -in üzərindı olmalıdır</li>
                                     <li class="list-item">Hər modulun sonunda keçiriləcək olan imtahandan uğur əldə etməyən tələbə növbəti modula buraxılmır</li>
                                     <li class="list-item">Pragmatech-dən məzun olma sadəcə seçilən təhsil planının bütün modullarını uğurla başa vurmaq deməkdir</li>
                                     <li class="list-item">Pragmatech dəstək komandası tərəfindən verilən və tələbə tərəfindən qəbul edilən tapşırıqlardan uğursuz tapşırıq sayı 10-u keçməməlidir</li>
@@ -285,7 +332,7 @@
                         <div class="vision-content">
                             <div class="portfolio-details-content">
                                 <div class="text">
-                                    <p>Hər insan təhsilə qoyduğu investisiyanın aqibətindən əmin olmaq istər. Bu istər maddi , istərsə da zaman olsun fərqi yoxdur. Pragmatech təhsilini uğurla başa vuran tələbələrə iki zəmanət verir.</p>
+                                    <p>Hər insan təhsilə qoyduğu investisiyanın aqibətindən əmin olmaq istər. Bu istər maddi, istərsə da zaman olsun fərqi yoxdur. Pragmatech təhsilini uğurla başa vuran tələbələrə iki zəmanət verir.</p>
                                 </div>
                             </div>
                             <ul class="check-list">
