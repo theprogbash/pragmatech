@@ -8710,7 +8710,6 @@ ol {
 .contact-inner input, .contact-inner textarea {
   width: 100%;
   color: #000;
-  border-color: #f8f8f8;
   background-color: #f8f8f8;
   font-size: 15px;
   font-weight: 400;
@@ -8718,11 +8717,7 @@ ol {
   border: none;
   width: 100%;
   outline: none;
-  border: 1px solid #eee;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
+  border: 1px solid #bbbbbb;
   border-radius: 5px;
   padding: 3px 20px;
   height: 56px;
@@ -8763,7 +8758,7 @@ ol {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  background-color: #d2a98e;
+  background-color: #41e063;
 }
 .conact-us-wrap-one .sub-heading {
   margin-top: 15px;

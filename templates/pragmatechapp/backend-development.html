@@ -1,0 +1,542 @@
+{% extends 'pragmatechapp/base.html' %}
+{% block content %}
+<div class="site-wrapper-reveal">
+    {% load static %}
+    <div class="about-banner-wrap banner-space bg-img" data-bg="{% static 'assets/images/hero/home-appointment-hero-bg-image.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 ml-auto mr-auto">
+                    <div class="about-banner-content text-center">
+                        <h1 class="mb-15 text-white">Backend Development</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="development">
+        <div class="vision-overview section-space--pt_40">
+            <div class="container">
+                {% load static %}
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col-12 section-title">
+                                <div class="section-title-wrap section-space--mb_30">
+                                    <h4 class="heading">Tədris müddəti</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vision-content">
+                            <ul class="check-list">
+                                <li class="list-item">Ümumi - 44 həftə (11ay)</li>
+                                <li class="list-item">Həftənin 5 günü </li>
+                                <li class="list-item">Gündə 3 saat</li>
+                                <li class="list-item">Günün birinci yarısı 10:00 - 13:00</li>
+                                <li class="list-item">Günün ikinci yarısı 14:30 - 17:30</li>
+                                <li class="list-item">Axşam qrupları 19:00 - 22:00</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-12 section-title">
+                                <div class="section-title-wrap section-space--mb_15">
+                                    <h4 class="heading">Niyə Pragmatech?</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-details-content">
+                            <div class="text">
+                                <p>Keyfiyyətli proqramçıların yetişə bilməsi üçün sadəcə təhsil mərkəzi olmaq kifayət
+                                    etmir.
+                                    Bir proqramçının öyrənmə motivasiyasının daim yüksək olması üçün, onun hər gün yeni
+                                    problemlərlə
+                                    üzləşməsi lazımdır. Hər həll etdiyi problem ona ya maddi ya da başqa formada mənfəət
+                                    təmin etməlidir.
+                                    Yalnız bu mühitdə proqramçı sürətlə öyrənə və inkişaf edə bilər. Pragmatech
+                                    tələbələrə ilkin bilikləri
+                                    verdikdən sonra, onları birbaşa problemlərlə üz-üzə qoyur və bu problemlərin həlli
+                                    üçün ehtiyac duyulan
+                                    nəzəri bilikləri verir. Problemin həlli zamanı tələbələrimiz dəstək komandasının
+                                    nəzarətində həm praktiki
+                                    biliklər həm də maddi gəlir əldə edir. Bu sayədə qazandıqları mənfəət onları daha
+                                    sürətli öyrənməyə və daha
+                                    böyük problemləri həll etməyə sövq edir. Əldə olunan nəticə isə daimi artan inkişaf
+                                    tempi olur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class=" section-title">
+                            <div class="section-title-wrap section-space--mt_70 section-space--mb_30">
+                                <h4 class="heading">Nələri öyrənəcəksiz?</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="faq-two-wrapper">
+                            <div id="accordion_two">
+                                <div class="card">
+                                    <div class="card-header" id="heading__10">
+                                        <h5 class="mb-0 font-weight--bold">
+                                            <button class="btn-link collapsed" data-toggle="collapse"
+                                                data-target="#tab__10" aria-expanded="false" aria-controls="tab__10">
+                                                Foundation <span>
+                                                    <i class="far fa-caret-circle-down"></i>
+                                                    <i class="far fa-caret-circle-right"></i> </span>
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="tab__10" class="collapse" aria-labelledby="heading__10"
+                                        data-parent="#accordion_two">
+                                        <div class="card-body">
+                                            <ul class="check-list">
+                                                <li class="list-item">Introduction to programming</li>
+                                                <li class="list-item">Binary. ASCII. Algorithms. Pseudocode. Scratch.
+                                                </li>
+                                                <li class="list-item">Syntax. Variables. Data Types. Operators. Boolean
+                                                    Expressions and Conditionals. Loops.</li>
+                                                <li class="list-item">Compiling. Debugging. Arrays and Strings.
+                                                    Command-Line Interaction. Exit Codes. Searching. Computational
+                                                    Complexity. Computational Models.</li>
+                                                <li class="list-item">Functions. Tools for Debugging. More on Strings.
+                                                    Memory. Pointers. Structs.</li>
+                                                <li class="list-item">Valgrind. More on Structs. Linked Lists. Hash
+                                                    Tables. Trees. Tries.</li>
+                                                <li class="list-item">Internet Basics. HTTP. HTML. Forms. CSS.
+                                                    JavaScript.</li>
+                                                <li class="list-item">Python. Conditionals. Booleans. Loops. Data Types.
+                                                    Functions.</li>
+                                                <li class="list-item">Flask. MVC. Autocomplete. Events. Ajax. JSON.</li>
+                                                <li class="list-item">Cookies. Sessions. Databases. SQL. Race
+                                                    Conditions.</li>
+                                                <li class="list-item">Bonus</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="heading__12">
+                                        <h5 class="mb-0">
+                                            <button class="btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse__12" aria-expanded="false"
+                                                aria-controls="collapse__12">
+                                                Python <span><i class="far fa-caret-circle-down"></i>
+                                                    <i class="far fa-caret-circle-right"></i> </span>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapse__12" class="collapse" aria-labelledby="heading__12"
+                                        data-parent="#accordion_two">
+                                        <div class="card-body">
+                                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                                                <div class="second-header">Python</div>
+                                                <div class="card-body-list">
+                                                    <ul class="check-list">
+                                                        <li class="list-item">Python Data Types</li>
+                                                        <li class="list-item">Operators & Conditional Statements</li>
+                                                        <li class="list-item">Loops</li>
+                                                        <li class="list-item">Methods & Functions</li>
+                                                        <li class="list-item">Object Oriented Programming in Python</li>
+                                                        <li class="list-item">Working with documents, JSON datas and
+                                                            databases</li>
+                                                        <li class="list-item">Exception Handling</li>
+                                                        <li class="list-item">Regular Expressions</li>
+                                                        <li class="list-item">Working with Modules and Packages</li>
+                                                        <li class="list-item">Decorators</li>
+                                                        <li class="list-item">Generators</li>
+                                                        <li class="list-item">Bonus</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                                                <div class="second-header">Django</div>
+                                                <div class="card-body-list">
+                                                    <ul class="check-list">
+                                                        <li class="list-item">Django Basics - Philosophy, advantages,
+                                                            patterns</li>
+                                                        <li class="list-item">Django Apps Life Cycle - Creating project,
+                                                            application, using the admin interface</li>
+                                                        <li class="list-item">Django Models and Databases</li>
+                                                        <li class="list-item">Handling HTTP Requests</li>
+                                                        <li class="list-item">Django Cookies Handling</li>
+                                                        <li class="list-item">Django Sessions</li>
+                                                        <li class="list-item">Django Caching</li>
+                                                        <li class="list-item">Django RSS</li>
+                                                        <li class="list-item">Django AJAX</li>
+                                                        <li class="list-item">Bonus</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="heading__15">
+                                        <h5 class="mb-0">
+                                            <button class="btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse__15" aria-expanded="false"
+                                                aria-controls="collapse__15">
+                                                PHP (Laravel) <span><i class="far fa-caret-circle-down"></i>
+                                                    <i class="far fa-caret-circle-right"></i> </span>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapse__15" class="collapse" aria-labelledby="heading__15"
+                                        data-parent="#accordion_two">
+                                        <div class="card-body">
+                                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                                                <div class="second-header">Python</div>
+                                                <div class="card-body-list">
+                                                    <ul class="check-list">
+                                                        <li class="list-item">Introducing PHP</li>
+                                                        <li class="list-item">Installing And Configuring PHP</li>
+                                                        <li class="list-item">PHP Input Mechanism </li>
+                                                        <li class="list-item">PHP Output Mechanism</li>
+                                                        <li class="list-item">Language Basics</li>
+                                                        <li class="list-item">Operators & Expressions</li>
+                                                        <li class="list-item">Working With Flow Control Through Control
+                                                            Statement</li>
+                                                        <li class="list-item">Working With Flow Control Through Loop
+                                                            Statement</li>
+                                                        <li class="list-item">Array With PHP</li>
+                                                        <li class="list-item">Using Strings In PHP</li>
+                                                        <li class="list-item">PHP Functions</li>
+                                                        <li class="list-item">File Handling In PHP</li>
+                                                        <li class="list-item">Creating Web Features</li>
+                                                        <li class="list-item">Object Oriented Programming</li>
+                                                        <li class="list-item">Error & Exception Handling</li>
+                                                        <li class="list-item">Creating Security Using PHP</li>
+                                                        <li class="list-item">Regular Expression</li>
+                                                        <li class="list-item">Database Management (Mysql)</li>
+                                                        <li class="list-item">State Management</li>
+                                                        <li class="list-item">Ajax</li>
+                                                        <li class="list-item">Payment Gateway Integration</li>
+                                                        <li class="list-item">Mvc (Model View Controller )</li>
+                                                        <li class="list-item">Bonus</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                                                <div class="second-header">Laravel</div>
+                                                <div class="card-body-list">
+                                                    <ul class="check-list">
+                                                        <li class="list-item">Framework & Package Manager</li>
+                                                        <li class="list-item">Laravel (Basic)</li>
+                                                        <li class="list-item">Middleware (Create Custom Middleware)</li>
+                                                        <li class="list-item">Service Provider </li>
+                                                        <li class="list-item">Auth</li>
+                                                        <li class="list-item">Auth Different Middleware And Table</li>
+                                                        <li class="list-item">Custom Request Class</li>
+                                                        <li class="list-item">Custom Validation Class</li>
+                                                        <li class="list-item">Eloquent Orm</li>
+                                                        <li class="list-item">Relationship Methods</li>
+                                                        <li class="list-item">Task | Create Laravel Project</li>
+                                                        <li class="list-item">Bonus</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="heading__16">
+                                        <h5 class="mb-0">
+                                            <button class="btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse__16" aria-expanded="false"
+                                                aria-controls="collapse__16">
+                                                C# (ASP.NET Core) <span><i class="far fa-caret-circle-down"></i>
+                                                    <i class="far fa-caret-circle-right"></i> </span>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapse__16" class="collapse" aria-labelledby="heading__16"
+                                        data-parent="#accordion_two">
+                                        <div class="card-body">
+                                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                                                <div class="second-header">C#</div>
+                                                <div class="card-body-list">
+                                                    <ul class="check-list">
+                                                        <li class="list-item">Introduction to C# and .NET</li>
+                                                        <li class="list-item">Review of Visual C# Syntax</li>
+                                                        <li class="list-item">Creating Methods, Handling Exceptions, and
+                                                            Monitoring Applications</li>
+                                                        <li class="list-item">Basic types and constructs of Visual C#
+                                                        </li>
+                                                        <li class="list-item">Creating Classes and Implementing
+                                                            Type-Safe Collections</li>
+                                                        <li class="list-item">Creating a Class Hierarchy by Using
+                                                            Inheritance</li>
+                                                        <li class="list-item">Reading and Writing Local Data</li>
+                                                        <li class="list-item">Accessing a Database</li>
+                                                        <li class="list-item">Accessing Remote Data</li>
+                                                        <li class="list-item">Designing the User Interface for a
+                                                            Graphical Application</li>
+                                                        <li class="list-item">Improving Application Performance and
+                                                            Responsiveness</li>
+                                                        <li class="list-item">Integrating with Unmanaged Code</li>
+                                                        <li class="list-item">Creating Reusable Types and Assemblies
+                                                        </li>
+                                                        <li class="list-item">Encrypting and Decrypting Data</li>
+                                                        <li class="list-item">Bonus</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                                                <div class="second-header">ASP.NET Core</div>
+                                                <div class="card-body-list">
+                                                    <ul class="check-list">
+                                                        <li class="list-item">Exploring ASP.NET Core MVC</li>
+                                                        <li class="list-item">Designing ASP.NET Core MVC Web
+                                                            Applications</li>
+                                                        <li class="list-item">Configure Middlewares and Services in
+                                                            ASP.NET Core</li>
+                                                        <li class="list-item">Developing Controllers,Models</li>
+                                                        <li class="list-item">Using Entity Framework Core in ASP.NET
+                                                            Core</li>
+                                                        <li class="list-item">Using Layouts, CSS and JavaScript in
+                                                            ASP.NET Core MVC</li>
+                                                        <li class="list-item">Client-Side Development</li>
+                                                        <li class="list-item">Testing and Troubleshooting</li>
+                                                        <li class="list-item">Managing Security</li>
+                                                        <li class="list-item">Performance and Communication</li>
+                                                        <li class="list-item">Implementing Web APIs</li>
+                                                        <li class="list-item">Hosting and Deployment</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="heading__13">
+                                        <h5 class="mb-0">
+                                            <button class="collapsed" data-toggle="collapse" data-target="#collapse__13"
+                                                aria-expanded="false" aria-controls="collapse__13">
+                                                Software Deployment<span><i class="far fa-caret-circle-down"></i>
+                                                    <i class="far fa-caret-circle-right"></i> </span>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapse__13" class="collapse" aria-labelledby="heading__13"
+                                        data-parent="#accordion_two">
+                                        <div class="card-body">
+                                            <ul class="check-list">
+                                                <li class="list-item">Infrastructure Setup</li>
+                                                <li class="list-item">Introduction to DevOps</li>
+                                                <li class="list-item">Software Version Control</li>
+                                                <li class="list-item">Continuous Deployment: Containerization with
+                                                    Docker</li>
+                                                <li class="list-item">Containerization with Docker: Ecosystem and
+                                                    Networking</li>
+                                                <li class="list-item">Configuration Management using Puppet</li>
+                                                <li class="list-item">Configuration Management using Ansible</li>
+                                                <li class="list-item">Continuous Testing using Selenium</li>
+                                                <li class="list-item">Continuous Integration using Jenkins</li>
+                                                <li class="list-item">Continuous Orchestration using Kubernetes</li>
+                                                <li class="list-item">Continuous Monitoring using Nagios</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="heading__14">
+                                        <h5 class="mb-0">
+                                            <button class="collapsed" data-toggle="collapse" data-target="#collapse__14"
+                                                aria-expanded="false" aria-controls="collapse__14">
+                                                Cybersecurity for Developers<span><i
+                                                        class="far fa-caret-circle-down"></i>
+                                                    <i class="far fa-caret-circle-right"></i> </span>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapse__14" class="collapse" aria-labelledby="heading__14"
+                                        data-parent="#accordion_two">
+                                        <div class="card-body">
+                                            <ul class="check-list">
+                                                <li class="list-item">Improper Neutralization of Input During Web Page
+                                                    Generation ('Cross-site Scripting')</li>
+                                                <li class="list-item">Improper Input Validation</li>
+                                                <li class="list-item">Information Exposure</li>
+                                                <li class="list-item">Out-of-bounds Read</li>
+                                                <li class="list-item">Improper Neutralization of Special Elements used
+                                                    in an SQL Command ('SQL Injection')</li>
+                                                <li class="list-item">Use After Free</li>
+                                                <li class="list-item">Integer Overflow or Wraparound</li>
+                                                <li class="list-item">Cross-Site Request Forgery (CSRF)</li>
+                                                <li class="list-item">Improper Limitation of a Pathname to a Restricted
+                                                    Directory ('Path Traversal')</li>
+                                                <li class="list-item">Improper Neutralization of Special Elements used
+                                                    in an OS Command ('OS Command Injection')</li>
+                                                <li class="list-item">Out-of-bounds Write</li>
+                                                <li class="list-item">Improper Authentication</li>
+                                                <li class="list-item">NULL Pointer Dereference</li>
+                                                <li class="list-item">Incorrect Permission Assignment for Critical
+                                                    Resource</li>
+                                                <li class="list-item">Unrestricted Upload of File with Dangerous Type
+                                                </li>
+                                                <li class="list-item">Improper Restriction of XML External Entity
+                                                    Reference</li>
+                                                <li class="list-item">Improper Control of Generation of Code ('Code
+                                                    Injection')</li>
+                                                <li class="list-item">Use of Hard-coded Credentials</li>
+                                                <li class="list-item">Uncontrolled Resource Consumption</li>
+                                                <li class="list-item">Missing Release of Resource after Effective
+                                                    Lifetime</li>
+                                                <li class="list-item">Untrusted Search Path</li>
+                                                <li class="list-item">Deserialization of Untrusted Data</li>
+                                                <li class="list-item">Improper Privilege Management</li>
+                                                <li class="list-item">Improper Certificate Validation</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-12 section-title">
+                                <div class="section-title-wrap section-space--mt_70 section-space--mb_30">
+                                    <h4 class="heading">Necə öyrədirik?</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vision-content">
+                            <div class="portfolio-details-content">
+                                <div class="text">
+                                    <p>Bir insanın proqramçı kimi yetişməsi üçün bir neçə istiqamətdə parelel şəkildə
+                                        inkişaf etməsi tələb olunur.</p>
+                                    <ul class="check-list">
+                                        <li class="list-item">Teorik biliklərin verilməsi</li>
+                                        <li class="list-item">Teorik biliklərin praktika və real problemlərin həlli ilə
+                                            təkmilləşdirilməsi</li>
+                                        <li class="list-item"> Sürətli və effektiv kod yazmaq üçün əlavə bacarıqların
+                                            əldə edilməsi</li>
+                                    </ul>
+                                    </p>Pragmatechdə tələbələr dərsdən əlavə qalan vaxtlarını Pragmatech Proqramçı
+                                    Komandasının (Biz onlara Dəstək Komandası deyirik) nəzarətində real problemlərin
+                                    həllində
+                                    iştirak edərək teorik biliklərini tətbiq edəcəklər və bununla bərabər görəcəkləri
+                                    işdən maddi gəlir əldə edə biləcəklər. Bundan əlavə
+                                    tələbələrə proqramçı olaraq yaxşı yetişə bilmələri üçün həftəsonları əlavə təlimlər
+                                    və tədbirlər təşkil olunacaq. Bu təlimlər vasitəsi
+                                    ilə tələbələr sektordakı təcrübəli insanların məsləhətlərindən faydalana biləcəklər.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-12 section-title">
+                                <div class="section-title-wrap section-space--mt_70 section-space--mb_30">
+                                    <h4 class="heading">Şərtlərimiz</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-details-content">
+                            <div class="text">
+                                <p>Tələbələr Pragmatechin verdiyi zəmanətlərdən faydalana bilmək üçün aşağıdakı şərtlərə
+                                    əməl etməlidirlər. Tələbə bu şərtlərdən hər hansı birinə riayət etməzsə zəmanət
+                                    hüququndan məhrum olur</p>
+                                <ul class="check-list">
+                                    <li class="list-item">Tədris müddətində davamiyyət faizi 90% -in üzərindı olmalıdır
+                                    </li>
+                                    <li class="list-item">Hər modulun sonunda keçiriləcək olan imtahandan uğur əldə
+                                        etməyən tələbə növbəti modula buraxılmır</li>
+                                    <li class="list-item">Pragmatech-dən məzun olma sadəcə seçilən təhsil planının bütün
+                                        modullarını uğurla başa vurmaq deməkdir</li>
+                                    <li class="list-item">Pragmatech dəstək komandası tərəfindən verilən və tələbə
+                                        tərəfindən qəbul edilən tapşırıqlardan uğursuz tapşırıq sayı 10-u keçməməlidir
+                                    </li>
+                                    <li class="list-item">Tələbəyə hansı tapşırığın verilməsinə komanda rəhbəri və
+                                        müəllim qərar verir</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-12 section-title">
+                                <div class="section-title-wrap section-space--mt_70 section-space--mb_30">
+                                    <h4 class="heading">Zəmanətlərimiz </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vision-content">
+                            <div class="portfolio-details-content">
+                                <div class="text">
+                                    <p>Hər insan təhsilə qoyduğu investisiyanın aqibətindən əmin olmaq istər. Bu istər
+                                        maddi, istərsə da zaman olsun fərqi yoxdur. Pragmatech təhsilini uğurla başa
+                                        vuran tələbələrə iki zəmanət verir.</p>
+                                </div>
+                            </div>
+                            <ul class="check-list">
+                                <li class="list-item">Pragmatechdə təhsilə ödənilən məbləğin verilən işləri yerinə
+                                    yetirməklə tamamən geri qazanma zəmanəti</li>
+                                <li class="list-item">Partnyor şirkətlərdən birində və ya Pragmatech daxilində işlə
+                                    təmin olunması zəmanəti</li>
+                            </ul>
+                            <div class="portfolio-details-content">
+                                <div class="text">
+                                    <p>Bu sayədə tələbələrimiz təhsillərini başa vurduqdan sonra işlə bağlı hər hansı
+                                        bir narahatçılıq keçirməyəcək, birbaşa iş həyatına keçid əldə edəcəklər.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-12 section-title">
+                                <div class="section-title-wrap section-space--mt_70 section-space--mb_30">
+                                    <h4 class="heading">Qazanacağınız əlavə bacarıqlar</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-details-content">
+                            <div class="text">
+                                <p>Mərkəzimizdə tədris aldığı müddət ərzində hər bir tələbə, nəzəri və praktik
+                                    biliklərlə yanaşı, daha keyfiyyətli proqramçı ola bilmək üçün aşağıdakı bilik və
+                                    bacarıqlara da yiyələnəcəkdir. </p>
+                                <ul class="check-list">
+                                    <li class="list-item">Araşdırma qabiliyyəti</li>
+                                    <li class="list-item">Köməkçi alətlərdən əlverişli istifadə</li>
+                                    <li class="list-item">Layihələrin idarə olunması</li>
+                                    <li class="list-item">Sürətli kod yaza bilmək üçün avtomatlaşdırma bacarıqları</li>
+                                    <li class="list-item">Vaxtın idarə olunması</li>
+                                    <li class="list-item">Tapşırıqların idarə olunması</li>
+                                    <li class="list-item">Komanda şəklində işləmə bacarığı</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="feature-list-button-box mt-30 mb-30 text-center">
+                            <a href="#" class="ht-btn ht-btn-md">İndi müraciət et</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

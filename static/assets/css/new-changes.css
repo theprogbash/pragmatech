@@ -198,9 +198,9 @@
     margin-bottom: 0px;
 }
 
-.development #collapse__12 .card-body {
+.development .card-body {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 

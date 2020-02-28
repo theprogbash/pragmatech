@@ -63,3 +63,6 @@ def foundation(request):
 
 def frontend(request):
     return render(request, 'pragmatechapp/frontend-development.html', {})
+
+def backend(request):
+    return render(request, 'pragmatechapp/backend-development.html', {})
