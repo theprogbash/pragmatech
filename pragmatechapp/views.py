@@ -69,3 +69,6 @@ def backend(request):
 
 def contact(request):
     return render(request, 'pragmatechapp/contact.html', {})
+
+def coming_soon(request):
+    return render(request, 'pragmatechapp/coming-soon.html', {})
