@@ -28,7 +28,7 @@ SECRET_KEY = 'e3-^6!5xgyoqve44^s2x#%$efa7nb)92gad9ttccxn8)0tx13w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['167.172.139.129']
+ALLOWED_HOSTS = ['167.172.139.129', '.pragmatech.az']
 
 
 # Application definition
