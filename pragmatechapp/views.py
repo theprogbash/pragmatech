@@ -52,8 +52,8 @@ def php(request):
 def python(request):
     return render(request, 'pragmatechapp/python.html', {})
 
-def software_deployment(request):
-    return render(request, 'pragmatechapp/software-deployment.html', {})
+def devsecops(request):
+    return render(request, 'pragmatechapp/devsecops.html', {})
 
 def cybersecurity(request):
     return render(request, 'pragmatechapp/cybersecurity.html', {})
