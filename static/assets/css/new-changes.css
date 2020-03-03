@@ -280,7 +280,7 @@
 
 
 .about-banner-wrap {
-    background-image: url("{{ STATIC_URL }}/images/bg/about.jpg");
+    background-image: url("/static/images/bg/about.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
