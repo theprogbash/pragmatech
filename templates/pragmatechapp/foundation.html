@@ -1,81 +1,81 @@
 {% extends 'pragmatechapp/base.html' %}
 {% block content %}
 <div class="site-wrapper-reveal">
-    {% load static %}
-    <div class="about-banner-wrap banner-space bg-img" data-bg="{% static 'assets/images/hero/home-appointment-hero-bg-image.jpg' %}">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 ml-auto mr-auto">
-                    <div class="about-banner-content text-center">
-                        <h1 class="mb-15 text-white">Foundation</h1>
+        {% load static %}
+        <div class="about-banner-wrap banner-space bg-img" data-bg="{% static 'assets/images/hero/home-appointment-hero-bg-image.jpg' %}">
+            <div class="container">
+            {% load static %}
+                <div class="row">
+                    <div class="col-lg-8 ml-auto mr-auto">
+                        <div class="about-banner-content text-center">
+                            <h1 class="mb-15 text-white">Foundation</h1>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="feature-large-images-wrapper section-space--ptb_100">
-        {% load static %}
-        <div class="container">
-            <div class="cybersecurity-about-box">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                        <div class="fun-fact-wrapper">
-                            <div class="container">
-                                <div class="fun-fact-grid-12">
-                                    <div class="grid-item  wow move-up animated" style="visibility: visible;">
-                                        <div class="package-fun fun-fact--one text-center">
-                                            <div class="fun-fact__count counter">300</div>
-                                            <span class="fun-fact__text">SAAT</span>
+        <div class="feature-large-images-wrapper section-space--ptb_100">
+            <div class="container">
+            {% load static %}
+                <div class="cybersecurity-about-box">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                            <div class="fun-fact-wrapper">
+                                <div class="container">
+                                    <div class="fun-fact-grid-12">
+                                        <div class="grid-item  wow move-up animated" style="visibility: visible;">
+                                            <div class="package-fun fun-fact--one text-center">
+                                                <div class="fun-fact__count counter">300</div>
+                                                <span class="fun-fact__text">SAAT</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                            <div class="conact-us-wrap-one managed-it">
+                                <p class="package-text">Harvard Universitetinin CS50 kurrikulumu əsasında hazırlanmış tədris metodudur. Bu tədris paketi daxilində tələbələr böyük problərin alqoritmlər vasitəsilə asanlıqla həll oluna biləcəyini, proqramlaşdırmanın ümumi fəlsəfəsini və proqramların arxa planda
+                                    necə işlədiyini çox əyləncəli tətbiqlər vasitəsilə öyrənəcəklər.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-                        <div class="conact-us-wrap-one managed-it">
-                            <p class="package-text">Harvard Universitetinin CS50 kurrikulumu əsasında hazırlanmış tədris
-                                metodudur. Bu tədris paketi daxilində tələbələr böyük problərin alqoritmlər vasitəsilə
-                                asanlıqla həll oluna biləcəyini, proqramlaşdırmanın ümumi fəlsəfəsini və proqramların
-                                arxa planda
-                                necə işlədiyini çox əyləncəli tətbiqlər vasitəsilə öyrənəcəklər.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <section id="package-syl">
+            <div class="container">
+            {% load static %}
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title-wrap text-center section-space--mb_40">
+                            <h3 class="heading">Proqrama daxildir</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <ul class="check-list">
+                                <li class="list-item">Introduction to programming</li>
+                                <li class="list-item">Binary. ASCII. Algorithms. Pseudocode. Scratch.</li>
+                                <li class="list-item">Syntax. Variables. Data Types. Operators. Boolean Expressions and Conditionals. Loops.</li>
+                                <li class="list-item">Compiling. Debugging. Arrays and Strings. Command-Line Interaction. Exit Codes. Searching. Computational Complexity. Computational Models.</li>
+                                <li class="list-item">Functions. Tools for Debugging. More on Strings. Memory. Pointers. Structs.</li>
+                                <li class="list-item">Valgrind. More on Structs. Linked Lists. Hash Tables. Trees. Tries.</li>
+                                <li class="list-item">Internet Basics. HTTP. HTML. Forms. CSS. JavaScript.</li>
+                                <li class="list-item">Python. Conditionals. Booleans. Loops. Data Types. Functions.</li>
+                                <li class="list-item">Flask. MVC. Autocomplete. Events. Ajax. JSON.</li>
+                                <li class="list-item">Cookies. Sessions. Databases. SQL. Race Conditions.</li>
+                                <li class="list-item">Bonus</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </div>
+        </section>
     </div>
-
-    <section id="package-syl">
-        {% load static %}
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title-wrap text-center section-space--mb_40">
-                        <h3 class="heading">Proqrama daxildir</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="ht-message-box style-success">
-                        <span class="icon"><i class="far fa-check-circle"></i></span> HTML-ə girişin əsasları
-                    </div>
-                    <div class="ht-message-box style-success">
-                        <span class="icon"><i class="far fa-check-circle"></i></span> HTML-ə girişin əsasları
-                    </div>
-                    <div class="ht-message-box style-success">
-                        <span class="icon"><i class="far fa-check-circle"></i></span> HTML-ə girişin əsasları
-                    </div>
-                    <div class="ht-message-box style-success">
-                        <span class="icon"><i class="far fa-check-circle"></i></span> HTML-ə girişin əsasları
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-</div>
 {% endblock %}

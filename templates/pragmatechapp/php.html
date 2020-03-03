@@ -1,81 +1,117 @@
 {% extends 'pragmatechapp/base.html' %}
 {% block content %}
 <div class="site-wrapper-reveal">
-    {% load static %}
-    <div class="about-banner-wrap banner-space bg-img" data-bg="{% static 'assets/images/hero/home-appointment-hero-bg-image.jpg' %}">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 ml-auto mr-auto">
-                    <div class="about-banner-content text-center">
-                        <h1 class="mb-15 text-white">PHP</h1>
+        {% load static %}
+        <div class="about-banner-wrap banner-space bg-img" data-bg="{% static 'assets/images/hero/home-appointment-hero-bg-image.jpg' %}">
+            <div class="container">
+            {% load static %}
+                <div class="row">
+                    <div class="col-lg-8 ml-auto mr-auto">
+                        <div class="about-banner-content text-center">
+                            <h1 class="mb-15 text-white">PHP</h1>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="feature-large-images-wrapper section-space--ptb_100">
-        {% load static %}
-        <div class="container">
-            <div class="cybersecurity-about-box">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                        <div class="fun-fact-wrapper">
-                            <div class="container">
-                                <div class="fun-fact-grid-12">
-                                    <div class="grid-item  wow move-up animated" style="visibility: visible;">
-                                        <div class="package-fun fun-fact--one text-center">
-                                            <div class="fun-fact__count counter">300</div>
-                                            <span class="fun-fact__text">SAAT</span>
+        <div class="feature-large-images-wrapper section-space--ptb_100">
+            <div class="container">
+            {% load static %}
+                <div class="cybersecurity-about-box">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                            <div class="fun-fact-wrapper">
+                                <div class="container">
+                                    <div class="fun-fact-grid-12">
+                                        <div class="grid-item  wow move-up animated" style="visibility: visible;">
+                                            <div class="package-fun fun-fact--one text-center">
+                                                <div class="fun-fact__count counter">300</div>
+                                                <span class="fun-fact__text">SAAT</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                            <div class="conact-us-wrap-one managed-it">
+                                <p class="package-text">Açıq qaynaqlı və multiplatforma dəstəkli dil olan PHP öyrənməsi rahat, geniş dakumentasiyaya sahib bir dildir. Tələbələr bu dil vasitəsi ilə rahatlıqla veb sistemlər yaza bilmə qabiliyyətinə və PHP-nin Laravel və digər frameworklərinin işləmə prinsiplərinə
+                                    dərindən yiyələnəcəklər.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-                        <div class="conact-us-wrap-one managed-it">
-                            <p class="package-text">Açıq qaynaqlı və multiplatforma dəstəkli dil olan PHP öyrənməsi
-                                rahat, geniş dakumentasiyaya sahib bir dildir. Tələbələr bu dil vasitəsi ilə rahatlıqla
-                                veb sistemlər yaza bilmə qabiliyyətinə və PHP-nin Laravel və digər frameworklərinin
-                                işləmə prinsiplərinə
-                                dərindən yiyələnəcəklər.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <section id="package-syl">
+            <div class="container">
+            {% load static %}
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title-wrap text-center section-space--mb_40">
+                            <h3 class="heading">Proqrama daxildir</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                                <div class="second-header">PHP</div>
+                                <div class="card-body-list">
+                                    <ul class="check-list">
+                                        <li class="list-item">Introducing PHP</li>
+                                        <li class="list-item">Installing And Configuring PHP</li>
+                                        <li class="list-item">PHP Input Mechanism </li>
+                                        <li class="list-item">PHP Output Mechanism</li>
+                                        <li class="list-item">Language Basics</li>
+                                        <li class="list-item">Operators & Expressions</li>
+                                        <li class="list-item">Working With Flow Control Through Control Statement</li>
+                                        <li class="list-item">Working With Flow Control Through Loop Statement</li>
+                                        <li class="list-item">Array With PHP</li>
+                                        <li class="list-item">Using Strings In PHP</li>
+                                        <li class="list-item">PHP Functions</li>
+                                        <li class="list-item">File Handling In PHP</li>
+                                        <li class="list-item">Creating Web Features</li>
+                                        <li class="list-item">Object Oriented Programming</li>
+                                        <li class="list-item">Error & Exception Handling</li>
+                                        <li class="list-item">Creating Security Using PHP</li>
+                                        <li class="list-item">Regular Expression</li>
+                                        <li class="list-item">Database Management (Mysql)</li>
+                                        <li class="list-item">State Management</li>
+                                        <li class="list-item">Ajax</li>
+                                        <li class="list-item">Payment Gateway Integration</li>
+                                        <li class="list-item">Mvc (Model View Controller )</li>
+                                        <li class="list-item">Bonus</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                                <div class="second-header">Laravel</div>
+                                <div class="card-body-list">
+                                    <ul class="check-list">
+                                        <li class="list-item">Framework & Package Manager</li>
+                                        <li class="list-item">Laravel (Basic)</li>
+                                        <li class="list-item">Middleware (Create Custom Middleware)</li>
+                                        <li class="list-item">Service Provider </li>
+                                        <li class="list-item">Auth</li>
+                                        <li class="list-item">Auth Different Middleware And Table</li>
+                                        <li class="list-item">Custom Request Class</li>
+                                        <li class="list-item">Custom Validation Class</li>
+                                        <li class="list-item">Eloquent Orm</li>
+                                        <li class="list-item">Relationship Methods</li>
+                                        <li class="list-item">Task | Create Laravel Project</li>
+                                        <li class="list-item">Bonus</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </div>
+        </section>
     </div>
-
-    <section id="package-syl">
-        {% load static %}
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title-wrap text-center section-space--mb_40">
-                        <h3 class="heading">Proqrama daxildir</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="ht-message-box style-success">
-                        <span class="icon"><i class="far fa-check-circle"></i></span> HTML-ə girişin əsasları
-                    </div>
-                    <div class="ht-message-box style-success">
-                        <span class="icon"><i class="far fa-check-circle"></i></span> HTML-ə girişin əsasları
-                    </div>
-                    <div class="ht-message-box style-success">
-                        <span class="icon"><i class="far fa-check-circle"></i></span> HTML-ə girişin əsasları
-                    </div>
-                    <div class="ht-message-box style-success">
-                        <span class="icon"><i class="far fa-check-circle"></i></span> HTML-ə girişin əsasları
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-</div>
 {% endblock %}

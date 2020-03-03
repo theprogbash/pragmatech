@@ -117,10 +117,10 @@
 
 
 .package-fun .fun-fact__count{
-    color: #5336ff;
+    color: #41e063;
 }
 .package-fun .fun-fact__text{
-    color: #5336ff;
+    color: #41e063;
 }
 
 .gradation-process-area .pricing-table-one .pricing-table__list li::before {
@@ -243,6 +243,40 @@
     text-align: center;
 }
 
+.text-white {
+    font-weight: 700;
+}
+
+.main-description {
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+}
+
+.appointment-hero-wrapper:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.site-wrapper-reveal {
+    position: relative;
+}
+
+.appointment-hero-wrap {
+    position: relative;
+    z-index: 999999;
+}
+
+.business-solution-form-wrap {
+    position: relative;
+    z-index: 999;
+}
 /* .road-maps .timeline{
     list-style: none;
     padding: 20px;

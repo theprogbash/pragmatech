@@ -1,80 +1,103 @@
 {% extends 'pragmatechapp/base.html' %}
 {% block content %}
 <div class="site-wrapper-reveal">
-    {% load static %}
-    <div class="about-banner-wrap banner-space bg-img" data-bg="{% static 'assets/images/hero/home-appointment-hero-bg-image.jpg' %}">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 ml-auto mr-auto">
-                    <div class="about-banner-content text-center">
-                        <h1 class="mb-15 text-white">Python</h1>
+        {% load static %}
+        <div class="about-banner-wrap banner-space bg-img" data-bg="{% static 'assets/images/hero/home-appointment-hero-bg-image.jpg' %}">
+            <div class="container">
+            {% load static %}
+                <div class="row">
+                    <div class="col-lg-8 ml-auto mr-auto">
+                        <div class="about-banner-content text-center">
+                            <h1 class="mb-15 text-white">Python</h1>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="feature-large-images-wrapper section-space--ptb_100">
-        {% load static %}
-        <div class="container">
-            <div class="cybersecurity-about-box">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                        <div class="fun-fact-wrapper">
-                            <div class="container">
-                                <div class="fun-fact-grid-12">
-                                    <div class="grid-item  wow move-up animated" style="visibility: visible;">
-                                        <div class="package-fun fun-fact--one text-center">
-                                            <div class="fun-fact__count counter">300</div>
-                                            <span class="fun-fact__text">SAAT</span>
+        <div class="feature-large-images-wrapper section-space--ptb_100">
+            <div class="container">
+            {% load static %}
+                <div class="cybersecurity-about-box">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                            <div class="fun-fact-wrapper">
+                                <div class="container">
+                                    <div class="fun-fact-grid-12">
+                                        <div class="grid-item  wow move-up animated" style="visibility: visible;">
+                                            <div class="package-fun fun-fact--one text-center">
+                                                <div class="fun-fact__count counter">300</div>
+                                                <span class="fun-fact__text">SAAT</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                            <div class="conact-us-wrap-one managed-it">
+                                <p class="package-text">Python hal hazırda dünyada ən çox öyrənilən dillərdən biridir. Bunun səbəbi Python-un çox geniş əhatədə tətbiq edilə bilməsidir. Tələbələr Python Core öyrənməklə və veb sahəsində tətbiq etməklə bu dilin digər sahələrdə də istifadəsinə hazır hala gələcəklər.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-                        <div class="conact-us-wrap-one managed-it">
-                            <p class="package-text">Python hal hazırda dünyada ən çox öyrənilən dillərdən biridir. Bunun
-                                səbəbi Python-un çox geniş əhatədə tətbiq edilə bilməsidir. Tələbələr Python Core
-                                öyrənməklə və veb sahəsində tətbiq etməklə bu dilin digər sahələrdə də istifadəsinə
-                                hazır hala gələcəklər.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <section id="package-syl">
+            <div class="container">
+            {% load static %}
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title-wrap text-center section-space--mb_40">
+                            <h3 class="heading">Proqrama daxildir</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                                <div class="second-header">Python</div>
+                                <div class="card-body-list">
+                                    <ul class="check-list">
+                                        <li class="list-item">Python Data Types</li>
+                                        <li class="list-item">Operators & Conditional Statements</li>
+                                        <li class="list-item">Loops</li>
+                                        <li class="list-item">Methods & Functions</li>
+                                        <li class="list-item">Object Oriented Programming in Python</li>
+                                        <li class="list-item">Working with documents, JSON datas and databases</li>
+                                        <li class="list-item">Exception Handling</li>
+                                        <li class="list-item">Regular Expressions</li>
+                                        <li class="list-item">Working with Modules and Packages</li>
+                                        <li class="list-item">Decorators</li>
+                                        <li class="list-item">Generators</li>
+                                        <li class="list-item">Bonus</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                                <div class="second-header">Django</div>
+                                <div class="card-body-list">
+                                    <ul class="check-list">
+                                        <li class="list-item">Django Basics - Philosophy, advantages, patterns</li>
+                                        <li class="list-item">Django Apps Life Cycle - Creating project, application, using the admin interface</li>
+                                        <li class="list-item">Django Models and Databases</li>
+                                        <li class="list-item">Handling HTTP Requests</li>
+                                        <li class="list-item">Django Cookies Handling</li>
+                                        <li class="list-item">Django Sessions</li>
+                                        <li class="list-item">Django Caching</li>
+                                        <li class="list-item">Django RSS</li>
+                                        <li class="list-item">Django AJAX</li>
+                                        <li class="list-item">Bonus</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </div>
+        </section>
     </div>
-
-    <section id="package-syl">
-        {% load static %}
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title-wrap text-center section-space--mb_40">
-                        <h3 class="heading">Proqrama daxildir</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="ht-message-box style-success">
-                        <span class="icon"><i class="far fa-check-circle"></i></span> HTML-ə girişin əsasları
-                    </div>
-                    <div class="ht-message-box style-success">
-                        <span class="icon"><i class="far fa-check-circle"></i></span> HTML-ə girişin əsasları
-                    </div>
-                    <div class="ht-message-box style-success">
-                        <span class="icon"><i class="far fa-check-circle"></i></span> HTML-ə girişin əsasları
-                    </div>
-                    <div class="ht-message-box style-success">
-                        <span class="icon"><i class="far fa-check-circle"></i></span> HTML-ə girişin əsasları
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-</div>
 {% endblock %}
