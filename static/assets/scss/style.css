@@ -2632,7 +2632,7 @@ input[type="checkbox"] {
   font-weight: 500;
 }
 .top-message a:hover {
-  color: #003b8d;
+  color: #41e063;
 }
 
 /*============================== 
@@ -3887,7 +3887,7 @@ input[type="checkbox"] {
 }
 .btn--secondary:hover {
   background-image: none;
-  background: #003b8d;
+  background: #41e063;
 }
 .btn--black {
   background-image: none;
@@ -3941,10 +3941,10 @@ input[type="checkbox"] {
   right: 0;
   width: 0;
   height: 1px;
-  background-color: #003b8d;
+  background-color: #41e063;
 }
 .hover-style-link:hover {
-  color: #003b8d;
+  color: #41e063;
 }
 .hover-style-link:hover:after {
   left: 0;
@@ -4713,7 +4713,7 @@ input[type="checkbox"] {
   margin-top: 20px;
 }
 .ht-box-icon.style-02 .feature-btn a:hover {
-  color: #003b8d;
+  color: #41e063;
 }
 .ht-box-icon.style-03 .icon-box-wrap {
   padding: 30px;
@@ -7303,7 +7303,7 @@ ol {
   text-align: center;
   height: 48px;
   width: 48px;
-  line-height: 40px;
+  line-height: 37px;
   background: #ededed;
   color: #696969;
   border-radius: 50%;

@@ -277,6 +277,17 @@
     position: relative;
     z-index: 999;
 }
+
+
+.about-banner-wrap {
+    background-image: url("../images/bg/about.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* .road-maps .timeline{
     list-style: none;
     padding: 20px;
