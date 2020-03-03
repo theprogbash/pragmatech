@@ -2,7 +2,7 @@
 {% block content %}
 <div class="site-wrapper-reveal">
     {% load static %}
-    <div class="about-banner-wrap banner-space bg-img" data-bg="{% static 'assets/images/hero/home-appointment-hero-bg-image.jpg' %}">
+    <div class="about-banner-wrap banner-space bg-img" data-bg="{% static 'assets/images/bg/general.jpg' %}">
         <div class="container">
             {% load static %}
             <div class="row">
@@ -14,10 +14,11 @@
             </div>
         </div>
     </div>
+
     <section class="development">
+        {% load static %}
         <div class="vision-overview section-space--pt_40">
             <div class="container">
-                {% load static %}
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="row">
@@ -32,7 +33,7 @@
                                 <li class="list-item">Ümumi - 44 həftə (11ay)</li>
                                 <li class="list-item">Həftənin 5 günü </li>
                                 <li class="list-item">Gündə 3 saat</li>
-                                <li class="list-item">Günün birinci yarısı 10:00  - 13:00</li>
+                                <li class="list-item">Günün birinci yarısı 10:00 - 13:00</li>
                                 <li class="list-item">Günün ikinci yarısı 14:30 - 17:30</li>
                                 <li class="list-item">Axşam qrupları 19:00 - 22:00</li>
                             </ul>
@@ -49,14 +50,22 @@
                         </div>
                         <div class="portfolio-details-content">
                             <div class="text">
-                                <p>Keyfiyyətli proqramçıların yetişə bilməsi üçün sadəcə təhsil mərkəzi olmaq kifayət etmir. 
-                                    Bir proqramçının öyrənmə motivasiyasının daim yüksək olması üçün, onun hər gün yeni problemlərlə 
-                                    üzləşməsi lazımdır. Hər həll etdiyi problem ona ya maddi ya da başqa formada mənfəət təmin etməlidir. 
-                                    Yalnız bu mühitdə proqramçı sürətlə öyrənə və inkişaf edə bilər. Pragmatech tələbələrə ilkin bilikləri 
-                                    verdikdən sonra, onları birbaşa problemlərlə üz-üzə qoyur və bu problemlərin həlli üçün ehtiyac duyulan 
-                                    nəzəri bilikləri verir. Problemin həlli zamanı tələbələrimiz dəstək komandasının nəzarətində həm praktiki 
-                                    biliklər həm də maddi gəlir əldə edir. Bu sayədə qazandıqları mənfəət onları daha sürətli öyrənməyə və daha 
-                                    böyük problemləri həll etməyə sövq edir. Əldə olunan nəticə isə daimi artan inkişaf tempi olur.
+                                <p>Keyfiyyətli proqramçıların yetişə bilməsi üçün sadəcə təhsil mərkəzi olmaq kifayət
+                                    etmir.
+                                    Bir proqramçının öyrənmə motivasiyasının daim yüksək olması üçün, onun hər gün yeni
+                                    problemlərlə
+                                    üzləşməsi lazımdır. Hər həll etdiyi problem ona ya maddi ya da başqa formada mənfəət
+                                    təmin etməlidir.
+                                    Yalnız bu mühitdə proqramçı sürətlə öyrənə və inkişaf edə bilər. Pragmatech
+                                    tələbələrə ilkin bilikləri
+                                    verdikdən sonra, onları birbaşa problemlərlə üz-üzə qoyur və bu problemlərin həlli
+                                    üçün ehtiyac duyulan
+                                    nəzəri bilikləri verir. Problemin həlli zamanı tələbələrimiz dəstək komandasının
+                                    nəzarətində həm praktiki
+                                    biliklər həm də maddi gəlir əldə edir. Bu sayədə qazandıqları mənfəət onları daha
+                                    sürətli öyrənməyə və daha
+                                    böyük problemləri həll etməyə sövq edir. Əldə olunan nəticə isə daimi artan inkişaf
+                                    tempi olur.
                                 </p>
                             </div>
                         </div>
@@ -77,27 +86,38 @@
                                 <div class="card">
                                     <div class="card-header" id="heading__10">
                                         <h5 class="mb-0 font-weight--bold">
-                                            <button class="btn-link collapsed" data-toggle="collapse" data-target="#tab__10" aria-expanded="false" aria-controls="tab__10">
+                                            <button class="btn-link collapsed" data-toggle="collapse"
+                                                data-target="#tab__10" aria-expanded="false" aria-controls="tab__10">
                                                 Foundation <span>
-                                        <i class="far fa-caret-circle-down"></i>
-                                        <i class="far fa-caret-circle-right"></i> </span>
+                                                    <i class="far fa-caret-circle-down"></i>
+                                                    <i class="far fa-caret-circle-right"></i> </span>
                                             </button>
                                         </h5>
                                     </div>
 
-                                    <div id="tab__10" class="collapse" aria-labelledby="heading__10" data-parent="#accordion_two">
+                                    <div id="tab__10" class="collapse" aria-labelledby="heading__10"
+                                        data-parent="#accordion_two">
                                         <div class="card-body">
                                             <ul class="check-list">
                                                 <li class="list-item">Introduction to programming</li>
-                                                <li class="list-item">Binary. ASCII. Algorithms. Pseudocode. Scratch.</li>
-                                                <li class="list-item">Syntax. Variables. Data Types. Operators. Boolean Expressions and Conditionals. Loops.</li>
-                                                <li class="list-item">Compiling. Debugging. Arrays and Strings. Command-Line Interaction. Exit Codes. Searching. Computational Complexity. Computational Models.</li>
-                                                <li class="list-item">Functions. Tools for Debugging. More on Strings. Memory. Pointers. Structs.</li>
-                                                <li class="list-item">Valgrind. More on Structs. Linked Lists. Hash Tables. Trees. Tries.</li>
-                                                <li class="list-item">Internet Basics. HTTP. HTML. Forms. CSS. JavaScript.</li>
-                                                <li class="list-item">Python. Conditionals. Booleans. Loops. Data Types. Functions.</li>
+                                                <li class="list-item">Binary. ASCII. Algorithms. Pseudocode. Scratch.
+                                                </li>
+                                                <li class="list-item">Syntax. Variables. Data Types. Operators. Boolean
+                                                    Expressions and Conditionals. Loops.</li>
+                                                <li class="list-item">Compiling. Debugging. Arrays and Strings.
+                                                    Command-Line Interaction. Exit Codes. Searching. Computational
+                                                    Complexity. Computational Models.</li>
+                                                <li class="list-item">Functions. Tools for Debugging. More on Strings.
+                                                    Memory. Pointers. Structs.</li>
+                                                <li class="list-item">Valgrind. More on Structs. Linked Lists. Hash
+                                                    Tables. Trees. Tries.</li>
+                                                <li class="list-item">Internet Basics. HTTP. HTML. Forms. CSS.
+                                                    JavaScript.</li>
+                                                <li class="list-item">Python. Conditionals. Booleans. Loops. Data Types.
+                                                    Functions.</li>
                                                 <li class="list-item">Flask. MVC. Autocomplete. Events. Ajax. JSON.</li>
-                                                <li class="list-item">Cookies. Sessions. Databases. SQL. Race Conditions.</li>
+                                                <li class="list-item">Cookies. Sessions. Databases. SQL. Race
+                                                    Conditions.</li>
                                                 <li class="list-item">Bonus</li>
                                             </ul>
                                         </div>
@@ -106,14 +126,17 @@
                                 <div class="card">
                                     <div class="card-header" id="heading__11">
                                         <h5 class="mb-0">
-                                            <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapse__11" aria-expanded="false" aria-controls="collapse__11">
+                                            <button class="btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse__11" aria-expanded="false"
+                                                aria-controls="collapse__11">
                                                 HTML & CSS<span>
-                                        <i class="far fa-caret-circle-down"></i>
-                                        <i class="far fa-caret-circle-right"></i>  </span>
+                                                    <i class="far fa-caret-circle-down"></i>
+                                                    <i class="far fa-caret-circle-right"></i> </span>
                                             </button>
                                         </h5>
                                     </div>
-                                    <div id="collapse__11" class="collapse" aria-labelledby="heading__11" data-parent="#accordion_two">
+                                    <div id="collapse__11" class="collapse" aria-labelledby="heading__11"
+                                        data-parent="#accordion_two">
                                         <div class="card-body">
                                             <ul class="check-list">
                                                 <li class="list-item">HTML Fundamentals</li>
@@ -131,13 +154,16 @@
                                 <div class="card">
                                     <div class="card-header" id="heading__12">
                                         <h5 class="mb-0">
-                                            <button class="btn-link collapsed" data-toggle="collapse" data-target="#collapse__12" aria-expanded="false" aria-controls="collapse__12">
+                                            <button class="btn-link collapsed" data-toggle="collapse"
+                                                data-target="#collapse__12" aria-expanded="false"
+                                                aria-controls="collapse__12">
                                                 Javascript <span><i class="far fa-caret-circle-down"></i>
-                                        <i class="far fa-caret-circle-right"></i> </span>
+                                                    <i class="far fa-caret-circle-right"></i> </span>
                                             </button>
                                         </h5>
                                     </div>
-                                    <div id="collapse__12" class="collapse" aria-labelledby="heading__12" data-parent="#accordion_two">
+                                    <div id="collapse__12" class="collapse" aria-labelledby="heading__12"
+                                        data-parent="#accordion_two">
                                         <div class="card-body">
                                             <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
                                                 <div class="second-header">Javascript</div>
@@ -146,23 +172,29 @@
                                                         <li class="list-item">Introduction</li>
                                                         <li class="list-item">Javascript Fundamentals</li>
                                                         <li class="list-item">Efficient Development & Debugging</li>
-                                                        <li class="list-item">Working with Control Structures (if Statements, Loops, Error Handling)</li>
-                                                        <li class="list-item">Behind the Scenes & The (Weird) Past (ES3, ES5) & Present (ES6+) of JavaScript</li>
+                                                        <li class="list-item">Working with Control Structures (if
+                                                            Statements, Loops, Error Handling)</li>
+                                                        <li class="list-item">Behind the Scenes & The (Weird) Past (ES3,
+                                                            ES5) & Present (ES6+) of JavaScript</li>
                                                         <li class="list-item">DOM and Browser basics</li>
-                                                        <li class="list-item">Classes & Object-oriented Programming (OOP)</li>
+                                                        <li class="list-item">Classes & Object-oriented Programming
+                                                            (OOP)</li>
                                                         <li class="list-item">Constructor Functions & Prototypes</li>
                                                         <li class="list-item">Advanced DOM & More Browser APIs</li>
                                                         <li class="list-item">Working with Events</li>
                                                         <li class="list-item">Advanced Function Concepts</li>
-                                                        <li class="list-item">Async JavaScript: Promises & Callbacks</li>
+                                                        <li class="list-item">Async JavaScript: Promises & Callbacks
+                                                        </li>
                                                         <li class="list-item">Working with Http Requests</li>
                                                         <li class="list-item">Working with JavaScript Libraries</li>
-                                                        <li class="list-item">Modular JavaScript (Working with Modules)</li>
+                                                        <li class="list-item">Modular JavaScript (Working with Modules)
+                                                        </li>
                                                         <li class="list-item">JavaScript Tooling & Workflows</li>
                                                         <li class="list-item">Utilizing Browser Storage</li>
                                                         <li class="list-item">JavaScript & Browser Support</li>
                                                         <li class="list-item">Working with JavaScript Frameworks</li>
-                                                        <li class="list-item">Meta-Programming: Symbols, Iterators, Generators, Reflect API & Proxy API</li>
+                                                        <li class="list-item">Meta-Programming: Symbols, Iterators,
+                                                            Generators, Reflect API & Proxy API</li>
                                                         <li class="list-item">Node.js: An Introduction</li>
                                                         <li class="list-item">Security</li>
                                                         <li class="list-item">Deploying JavaScript Code</li>
@@ -178,10 +210,12 @@
                                                     <ul class="check-list">
                                                         <li class="list-item">Building Content with JSX</li>
                                                         <li class="list-item">Communicating with Props</li>
-                                                        <li class="list-item">Structuring Apps with Class-Based Components</li>
+                                                        <li class="list-item">Structuring Apps with Class-Based
+                                                            Components</li>
                                                         <li class="list-item">State in React Components</li>
                                                         <li class="list-item">Understanding Lifecycle Methods</li>
-                                                        <li class="list-item">Handling User Input with Forms and Events</li>
+                                                        <li class="list-item">Handling User Input with Forms and Events
+                                                        </li>
                                                         <li class="list-item">Making API Requests with React</li>
                                                         <li class="list-item">Building Lists of Records</li>
                                                         <li class="list-item">Using Ref's for DOM Access</li>
@@ -198,65 +232,51 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <div class="card-header" id="heading__13">
-                                        <h5 class="mb-0">
-                                            <button class="collapsed" data-toggle="collapse" data-target="#collapse__13" aria-expanded="false" aria-controls="collapse__13">
-                                                Software Deployment<span><i class="far fa-caret-circle-down"></i>
-                                        <i class="far fa-caret-circle-right"></i>  </span>
-                                            </button>
-                                        </h5>
-                                    </div>
-                                    <div id="collapse__13" class="collapse" aria-labelledby="heading__13" data-parent="#accordion_two">
-                                        <div class="card-body">
-                                            <ul class="check-list">
-                                                <li class="list-item">Infrastructure Setup</li>
-                                                <li class="list-item">Introduction to DevOps</li>
-                                                <li class="list-item">Software Version Control</li>
-                                                <li class="list-item">Continuous Deployment: Containerization with Docker</li>
-                                                <li class="list-item">Containerization with Docker: Ecosystem and Networking</li>
-                                                <li class="list-item">Configuration Management using Puppet</li>
-                                                <li class="list-item">Configuration Management using Ansible</li>
-                                                <li class="list-item">Continuous Testing using Selenium</li>
-                                                <li class="list-item">Continuous Integration using Jenkins</li>
-                                                <li class="list-item">Continuous Orchestration using Kubernetes</li>
-                                                <li class="list-item">Continuous Monitoring using Nagios</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+
                                 <div class="card">
                                     <div class="card-header" id="heading__14">
                                         <h5 class="mb-0">
-                                            <button class="collapsed" data-toggle="collapse" data-target="#collapse__14" aria-expanded="false" aria-controls="collapse__14">
-                                                Cybersecurity for Developers<span><i class="far fa-caret-circle-down"></i>
-                                        <i class="far fa-caret-circle-right"></i>  </span>
+                                            <button class="collapsed" data-toggle="collapse" data-target="#collapse__14"
+                                                aria-expanded="false" aria-controls="collapse__14">
+                                                Cybersecurity for Developers<span><i
+                                                        class="far fa-caret-circle-down"></i>
+                                                    <i class="far fa-caret-circle-right"></i> </span>
                                             </button>
                                         </h5>
                                     </div>
-                                    <div id="collapse__14" class="collapse" aria-labelledby="heading__14" data-parent="#accordion_two">
+                                    <div id="collapse__14" class="collapse" aria-labelledby="heading__14"
+                                        data-parent="#accordion_two">
                                         <div class="card-body">
                                             <ul class="check-list">
-                                                <li class="list-item">Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')</li>
+                                                <li class="list-item">Improper Neutralization of Input During Web Page
+                                                    Generation ('Cross-site Scripting')</li>
                                                 <li class="list-item">Improper Input Validation</li>
                                                 <li class="list-item">Information Exposure</li>
                                                 <li class="list-item">Out-of-bounds Read</li>
-                                                <li class="list-item">Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')</li>
+                                                <li class="list-item">Improper Neutralization of Special Elements used
+                                                    in an SQL Command ('SQL Injection')</li>
                                                 <li class="list-item">Use After Free</li>
                                                 <li class="list-item">Integer Overflow or Wraparound</li>
                                                 <li class="list-item">Cross-Site Request Forgery (CSRF)</li>
-                                                <li class="list-item">Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')</li>
-                                                <li class="list-item">Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')</li>
+                                                <li class="list-item">Improper Limitation of a Pathname to a Restricted
+                                                    Directory ('Path Traversal')</li>
+                                                <li class="list-item">Improper Neutralization of Special Elements used
+                                                    in an OS Command ('OS Command Injection')</li>
                                                 <li class="list-item">Out-of-bounds Write</li>
                                                 <li class="list-item">Improper Authentication</li>
                                                 <li class="list-item">NULL Pointer Dereference</li>
-                                                <li class="list-item">Incorrect Permission Assignment for Critical Resource</li>
-                                                <li class="list-item">Unrestricted Upload of File with Dangerous Type</li>
-                                                <li class="list-item">Improper Restriction of XML External Entity Reference</li>
-                                                <li class="list-item">Improper Control of Generation of Code ('Code Injection')</li>
+                                                <li class="list-item">Incorrect Permission Assignment for Critical
+                                                    Resource</li>
+                                                <li class="list-item">Unrestricted Upload of File with Dangerous Type
+                                                </li>
+                                                <li class="list-item">Improper Restriction of XML External Entity
+                                                    Reference</li>
+                                                <li class="list-item">Improper Control of Generation of Code ('Code
+                                                    Injection')</li>
                                                 <li class="list-item">Use of Hard-coded Credentials</li>
                                                 <li class="list-item">Uncontrolled Resource Consumption</li>
-                                                <li class="list-item">Missing Release of Resource after Effective Lifetime</li>
+                                                <li class="list-item">Missing Release of Resource after Effective
+                                                    Lifetime</li>
                                                 <li class="list-item">Untrusted Search Path</li>
                                                 <li class="list-item">Deserialization of Untrusted Data</li>
                                                 <li class="list-item">Improper Privilege Management</li>
@@ -265,9 +285,54 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="heading__13">
+                                        <h5 class="mb-0">
+                                            <button class="collapsed" data-toggle="collapse" data-target="#collapse__13"
+                                                aria-expanded="false" aria-controls="collapse__13">
+                                                DevSecOps<span><i class="far fa-caret-circle-down"></i>
+                                                    <i class="far fa-caret-circle-right"></i> </span>
+                                            </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapse__13" class="collapse" aria-labelledby="heading__13"
+                                        data-parent="#accordion_two">
+                                        <div class="card-body">
+                                            <ul class="check-list">
+                                                <li class="list-item">DevOps Fundamentals</li>
+                                                <li class="list-item">Docker</li>
+                                                <li class="list-item">Kubernates</li>
+                                                <li class="list-item">Blue/Green deployment strategy</li>
+                                                <li class="list-item">Secure SDLC Activities and Security Gates</li>
+                                                <li class="list-item">Container (Docker) Security</li>
+                                                <li class="list-item">Kubernetes Security</li>
+                                                <li class="list-item">Threat Modelling (Design) STRIDE vs DREAD
+                                                    approaches</li>
+                                                <li class="list-item">Static Analysis and Secure by Default (
+                                                    Implementation) SAST</li>
+                                                <li class="list-item">Dynamic Analysis(Testing) DAST</li>
+                                                <li class="list-item">OS Hardening, Web/Application Hardening (Deploy)
+                                                </li>
+                                                <li class="list-item">DevSecOps Maturity Model (DSOMM)</li>
+                                                <li class="list-item">Software Component Analysis SCA-OAST</li>
+                                                <li class="list-item">SAST (Static Analysis) in CI/CD pipeline</li>
+                                                <li class="list-item">DAST (Dynamic Analysis) in CI/CD pipeline</li>
+                                                <li class="list-item">IAST in CI/CD pipeline</li>
+                                                <li class="list-item">Infrastructure as Code IAC and Security as Code
+                                                    (SaC)</li>
+                                                <li class="list-item">Compliance as code Inspec</li>
+                                                <li class="list-item">Approaches to manage the vulnerabilities in the
+                                                    organization</li>
+                                                <li class="list-item">RASP vs WAF (Runtime Analysis Application Security
+                                                    vs Web Application Firewalls)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
 
@@ -283,16 +348,24 @@
                         <div class="vision-content">
                             <div class="portfolio-details-content">
                                 <div class="text">
-                                    <p>Bir insanın proqramçı kimi yetişməsi üçün bir neçə istiqamətdə parelel şəkildə inkişaf etməsi tələb olunur.</p> 
+                                    <p>Bir insanın proqramçı kimi yetişməsi üçün bir neçə istiqamətdə parelel şəkildə
+                                        inkişaf etməsi tələb olunur.</p>
                                     <ul class="check-list">
                                         <li class="list-item">Teorik biliklərin verilməsi</li>
-                                        <li class="list-item">Teorik biliklərin praktika və real problemlərin həlli ilə təkmilləşdirilməsi</li>
-                                        <li class="list-item"> Sürətli və effektiv kod yazmaq üçün əlavə bacarıqların əldə edilməsi</li>
+                                        <li class="list-item">Teorik biliklərin praktika və real problemlərin həlli ilə
+                                            təkmilləşdirilməsi</li>
+                                        <li class="list-item"> Sürətli və effektiv kod yazmaq üçün əlavə bacarıqların
+                                            əldə edilməsi</li>
                                     </ul>
-                                    </p>Pragmatechdə tələbələr dərsdən əlavə qalan vaxtlarını Pragmatech Proqramçı Komandasının (Biz onlara Dəstək Komandası deyirik) nəzarətində real problemlərin həllində 
-                                    iştirak edərək teorik biliklərini tətbiq edəcəklər və bununla bərabər görəcəkləri işdən maddi gəlir əldə edə biləcəklər. Bundan əlavə 
-                                    tələbələrə proqramçı olaraq yaxşı yetişə bilmələri üçün həftəsonları əlavə təlimlər və tədbirlər təşkil olunacaq. Bu təlimlər vasitəsi 
-                                    ilə tələbələr sektordakı təcrübəli insanların məsləhətlərindən faydalana biləcəklər.</p>
+                                    </p>Pragmatechdə tələbələr dərsdən əlavə qalan vaxtlarını Pragmatech Proqramçı
+                                    Komandasının (Biz onlara Dəstək Komandası deyirik) nəzarətində real problemlərin
+                                    həllində
+                                    iştirak edərək teorik biliklərini tətbiq edəcəklər və bununla bərabər görəcəkləri
+                                    işdən maddi gəlir əldə edə biləcəklər. Bundan əlavə
+                                    tələbələrə proqramçı olaraq yaxşı yetişə bilmələri üçün həftəsonları əlavə təlimlər
+                                    və tədbirlər təşkil olunacaq. Bu təlimlər vasitəsi
+                                    ilə tələbələr sektordakı təcrübəli insanların məsləhətlərindən faydalana biləcəklər.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -307,13 +380,21 @@
                         </div>
                         <div class="portfolio-details-content">
                             <div class="text">
-                                <p>Tələbələr Pragmatechin verdiyi zəmanətlərdən faydalana bilmək üçün aşağıdakı şərtlərə əməl etməlidirlər. Tələbə bu şərtlərdən hər hansı birinə riayət etməzsə zəmanət hüququndan məhrum olur</p>
+                                <p>Tələbələr Pragmatechin verdiyi zəmanətlərdən faydalana bilmək üçün aşağıdakı şərtlərə
+                                    əməl etməlidirlər. Tələbə bu şərtlərdən hər hansı birinə riayət etməzsə zəmanət
+                                    hüququndan məhrum olur</p>
                                 <ul class="check-list">
-                                    <li class="list-item">Tədris müddətində davamiyyət faizi 90% -in üzərindı olmalıdır</li>
-                                    <li class="list-item">Hər modulun sonunda keçiriləcək olan imtahandan uğur əldə etməyən tələbə növbəti modula buraxılmır</li>
-                                    <li class="list-item">Pragmatech-dən məzun olma sadəcə seçilən təhsil planının bütün modullarını uğurla başa vurmaq deməkdir</li>
-                                    <li class="list-item">Pragmatech dəstək komandası tərəfindən verilən və tələbə tərəfindən qəbul edilən tapşırıqlardan uğursuz tapşırıq sayı 10-u keçməməlidir</li>
-                                    <li class="list-item">Tələbəyə hansı tapşırığın verilməsinə komanda rəhbəri və müəllim qərar verir</li>
+                                    <li class="list-item">Tədris müddətində davamiyyət faizi 90% -in üzərindı olmalıdır
+                                    </li>
+                                    <li class="list-item">Hər modulun sonunda keçiriləcək olan imtahandan uğur əldə
+                                        etməyən tələbə növbəti modula buraxılmır</li>
+                                    <li class="list-item">Pragmatech-dən məzun olma sadəcə seçilən təhsil planının bütün
+                                        modullarını uğurla başa vurmaq deməkdir</li>
+                                    <li class="list-item">Pragmatech dəstək komandası tərəfindən verilən və tələbə
+                                        tərəfindən qəbul edilən tapşırıqlardan uğursuz tapşırıq sayı 10-u keçməməlidir
+                                    </li>
+                                    <li class="list-item">Tələbəyə hansı tapşırığın verilməsinə komanda rəhbəri və
+                                        müəllim qərar verir</li>
                                 </ul>
                             </div>
                         </div>
@@ -332,16 +413,21 @@
                         <div class="vision-content">
                             <div class="portfolio-details-content">
                                 <div class="text">
-                                    <p>Hər insan təhsilə qoyduğu investisiyanın aqibətindən əmin olmaq istər. Bu istər maddi, istərsə da zaman olsun fərqi yoxdur. Pragmatech təhsilini uğurla başa vuran tələbələrə iki zəmanət verir.</p>
+                                    <p>Hər insan təhsilə qoyduğu investisiyanın aqibətindən əmin olmaq istər. Bu istər
+                                        maddi, istərsə da zaman olsun fərqi yoxdur. Pragmatech təhsilini uğurla başa
+                                        vuran tələbələrə iki zəmanət verir.</p>
                                 </div>
                             </div>
                             <ul class="check-list">
-                                <li class="list-item">Pragmatechdə təhsilə ödənilən məbləğin verilən işləri yerinə yetirməklə tamamən geri qazanma zəmanəti</li>
-                                <li class="list-item">Partnyor şirkətlərdən birində və ya Pragmatech daxilində işlə təmin olunması zəmanəti</li>
+                                <li class="list-item">Pragmatechdə təhsilə ödənilən məbləğin verilən işləri yerinə
+                                    yetirməklə tamamən geri qazanma zəmanəti</li>
+                                <li class="list-item">Partnyor şirkətlərdən birində və ya Pragmatech daxilində işlə
+                                    təmin olunması zəmanəti</li>
                             </ul>
                             <div class="portfolio-details-content">
                                 <div class="text">
-                                    <p>Bu sayədə tələbələrimiz təhsillərini başa vurduqdan sonra işlə bağlı hər hansı bir narahatçılıq keçirməyəcək, birbaşa iş həyatına keçid əldə edəcəklər.</p>
+                                    <p>Bu sayədə tələbələrimiz təhsillərini başa vurduqdan sonra işlə bağlı hər hansı
+                                        bir narahatçılıq keçirməyəcək, birbaşa iş həyatına keçid əldə edəcəklər.</p>
                                 </div>
                             </div>
                         </div>
@@ -357,7 +443,9 @@
                         </div>
                         <div class="portfolio-details-content">
                             <div class="text">
-                                <p>Mərkəzimizdə tədris aldığı müddət ərzində hər bir tələbə, nəzəri və praktik biliklərlə yanaşı, daha keyfiyyətli proqramçı ola bilmək üçün aşağıdakı bilik və bacarıqlara da yiyələnəcəkdir. </p>
+                                <p>Mərkəzimizdə tədris aldığı müddət ərzində hər bir tələbə, nəzəri və praktik
+                                    biliklərlə yanaşı, daha keyfiyyətli proqramçı ola bilmək üçün aşağıdakı bilik və
+                                    bacarıqlara da yiyələnəcəkdir. </p>
                                 <ul class="check-list">
                                     <li class="list-item">Araşdırma qabiliyyəti</li>
                                     <li class="list-item">Köməkçi alətlərdən əlverişli istifadə</li>
