@@ -280,7 +280,8 @@
 
 
 .about-banner-wrap {
-    background-image: url("../images/bg/about.jpg");
+    /* background-image: url("../images/bg/about.jpg"); */
+    background-color: red;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
