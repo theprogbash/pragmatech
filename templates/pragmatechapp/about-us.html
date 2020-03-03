@@ -2,8 +2,9 @@
 {% block content %}
 <div class="site-wrapper-reveal">
     {% load static %}
-    <div class="about-banner-wrap banner-space" data-bg="{% static 'assets/images/bg/about.jpg' %}">
-        <div class="container">
+    <div class="about-banner-wrap banner-space bg-img" data-bg="{% static 'assets/images/bg/about.jpg' %}">
+        <div class=" container">
+            {% load static %}
             <div class="row">
                 <div class="col-lg-8 ml-auto mr-auto">
                     <div class="about-banner-content text-center">
@@ -48,7 +49,8 @@
                                 <div class="card-header" id="heading__10">
                                     <h5 class="mb-0 font-weight--bold">
                                         <button class="btn-link" data-toggle="collapse" data-target="#tab__10"
-                                            aria-expanded="true" aria-controls="tab__10">Praqmatik təhsil modeli nədir?<span>
+                                            aria-expanded="true" aria-controls="tab__10">Praqmatik təhsil modeli
+                                            nədir?<span>
                                                 <i class="far fa-caret-circle-down"></i>
                                                 <i class="far fa-caret-circle-right"></i> </span>
                                         </button>
@@ -58,7 +60,13 @@
                                 <div id="tab__10" class="show" aria-labelledby="heading__10"
                                     data-parent="#accordion_two">
                                     <div class="card-body">
-                                        <p>Pragmatech Təhsil və İnkişaf mərkəzi praqmatik təhsil modelinə əsaslanan tədris şirkətidir. Praqmatik təhsil modeli nədir? Bu model təhsilin birbaşa iş dünyası ilə inteqrasiasını təmin edərək tələbələrin öyrənmə sürətlərini artırılmasını hədəfləyən təhsil modelidir.
+                                        <p>Pragmatech Təhsil və İnkişaf mərkəzi praqmatik təhsil modelinə əsaslanan
+                                            tədris
+                                            şirkətidir. Praqmatik təhsil modeli nədir? Bu model təhsilin birbaşa iş
+                                            dünyası
+                                            ilə inteqrasiasını təmin edərək tələbələrin öyrənmə sürətlərini
+                                            artırılmasını
+                                            hədəfləyən təhsil modelidir.
                                             Hədəfimiz tələbələrin təhsilə qoyduqları investisiyanı qısa müddətdə geri
                                             qazanma və birbaşa iş dünyasına hazır kadr halında məzun olmalarını təmin
                                             etməkdir.
@@ -150,8 +158,7 @@
                     <!-- Start single-popup-wrap -->
                     <div class="video-interview section-space--mt_40">
                         <div class="single-popup-wrap">
-                            <img class="img-fluid border-radus-5"
-                                src="{% static 'assets/images/bg/about-bg.jpg' %}"
+                            <img class="img-fluid border-radus-5" src="{% static 'assets/images/bg/about-bg.jpg' %}"
                                 alt="">
                         </div>
                     </div>
