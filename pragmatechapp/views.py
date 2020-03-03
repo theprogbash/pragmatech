@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Applicant
+from .models import Applicant, Message
 from django.core.mail import send_mail
 from django.conf import settings
 
@@ -68,7 +68,27 @@ def backend(request):
     return render(request, 'pragmatechapp/backend-development.html', {})
 
 def contact(request):
-    return render(request, 'pragmatechapp/contact.html', {})
+    context = {
+        'messages': Message.objects.all()
+    }
+    if request.method == "POST":
+        sender_name = request.POST.get('sender_name')
+        sender_email = request.POST.get('sender_email')
+        message_subject = request.POST.get('message_subject')
+        message_content = request.POST.get('message_content')
+        subject = 'Mesajınız qəbul olundu'
+        message = 'Salam, dəyərli ' + str(sender_name) + '. \nTezliklə sizinlə əlaqə saxlanılacaq.'
+        from_email = settings.SERVER_EMAIL
+        recipient_list = [sender_email]
+        send_mail(subject, message, from_email, recipient_list)
+        if request.POST.get('message_content'):
+            Message.objects.create(
+                sender_name = request.POST.get('sender_name'),
+                sender_email = request.POST.get('sender_email'),
+                message_subject = request.POST.get('message_subject'),
+                message_content = request.POST.get('message_content')
+            )
+    return render(request, 'pragmatechapp/contact.html', context)
 
 # def coming_soon(request):
 #     return render(request, 'pragmatechapp/coming-soon.html', {})

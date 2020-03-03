@@ -7,3 +7,12 @@ class Applicant(models.Model):
     
     def __str__(self):
         return self.name
+
+class Message(models.Model):
+    sender_name = models.CharField(max_length=20)
+    sender_email = models.EmailField(max_length=50)
+    message_subject = models.CharField(max_length=100)
+    message_content = models.CharField(max_length=300)
+
+    def __str__(self):
+        return self.message_subject

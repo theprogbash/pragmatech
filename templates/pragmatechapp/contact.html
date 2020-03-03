@@ -29,21 +29,31 @@
 
                     <div class="col-lg-6 col-lg-6">
                         <div class="contact-form-wrap">
-                            <form id="contact-form" action="#" method="post">
+
+                            <form id="contact-form" action="{% url 'contact' %}" method="post">
+                                {% csrf_token %}
                                 <div class="contact-form">
                                     <div class="contact-input">
                                         <div class="contact-inner">
-                                            <input name="con_name" type="text" placeholder="Adınız *">
+                                            <input name="sender_name" type="text" placeholder="Adınız *" required minlength="3" 
+                                            oninvalid="this.setCustomValidity('Adınız minimum 3 hərfdən ibarət ola bilər.')"
+                                            oninput="this.setCustomValidity('')">
                                         </div>
                                         <div class="contact-inner">
-                                            <input name="con_email" type="email" placeholder="Email *">
+                                            <input name="sender_email" type="email" placeholder="Email *" required minlength="10"
+                                            oninvalid="this.setCustomValidity('Elektron poçt ünvanınızı düzgün daxil edin.')"
+                                            oninput="this.setCustomValidity('')">
                                         </div>
                                     </div>
                                     <div class="contact-inner">
-                                        <input name="con_subject" type="text" placeholder="Mövzu">
+                                        <input name="message_subject" type="text" placeholder="Mövzu" required minlength="5"
+                                        oninvalid="this.setCustomValidity('Mesajın mövzusunu daxil edin.')"
+                                        oninput="this.setCustomValidity('')">
                                     </div>
                                     <div class="contact-inner contact-message">
-                                        <textarea name="con_message" placeholder="Mesajınız..."></textarea>
+                                        <textarea name="message_content" placeholder="Mesajınız..." required minlength="10"
+                                        oninvalid="this.setCustomValidity('Mesajınızı daxil edin.')"
+                                        oninput="this.setCustomValidity('')"></textarea>
                                     </div>
                                     <div class="submit-btn mt-20">
                                         <button class="ht-btn ht-btn-md" type="submit">Göndər</button>
@@ -51,6 +61,7 @@
                                     </div>
                                 </div>
                             </form>
+
                         </div>
                     </div>
                 </div>
