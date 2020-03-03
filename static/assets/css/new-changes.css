@@ -253,6 +253,10 @@
     color: #fff;
 }
 
+.feature-list-button-box{
+    padding-bottom: 50px;
+}
+
 .appointment-hero-wrapper:before {
     content: "";
     position: absolute;
