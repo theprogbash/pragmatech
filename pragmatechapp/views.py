@@ -25,278 +25,46 @@ def index(request):
     return render(request, 'pragmatechapp/index.html', context)
 
 def about_us(request): 
-    context = {
-        'applicants': Applicant.objects.all()
-    }
-    if request.method == "POST":
-        applicant_name = request.POST.get('name')
-        applicant_email = request.POST.get('email')
-        applicant_phone = request.POST.get('phone')
-        subject = 'Müraciətiniz qəbul olundu'
-        message = 'Salam, dəyərli ' + str(applicant_name) + '. \nTezliklə sizinlə əlaqə saxlanılacaq.'
-        from_email = settings.SERVER_EMAIL
-        recipient_list = [applicant_email]
-        send_mail(subject, message, from_email, recipient_list)
-        if request.POST.get('email'):
-            Applicant.objects.create(
-                name = request.POST.get('name'),
-                email = request.POST.get('email'),
-                phone = request.POST.get('phone')
-            )
-    return render(request, 'pragmatechapp/about-us.html', context)
+    return render(request, 'pragmatechapp/about-us.html', {})
 
 def advantages(request):
-    context = {
-        'applicants': Applicant.objects.all()
-    }
-    if request.method == "POST":
-        applicant_name = request.POST.get('name')
-        applicant_email = request.POST.get('email')
-        applicant_phone = request.POST.get('phone')
-        subject = 'Müraciətiniz qəbul olundu'
-        message = 'Salam, dəyərli ' + str(applicant_name) + '. \nTezliklə sizinlə əlaqə saxlanılacaq.'
-        from_email = settings.SERVER_EMAIL
-        recipient_list = [applicant_email]
-        send_mail(subject, message, from_email, recipient_list)
-        if request.POST.get('email'):
-            Applicant.objects.create(
-                name = request.POST.get('name'),
-                email = request.POST.get('email'),
-                phone = request.POST.get('phone')
-            )
-    return render(request, 'pragmatechapp/pragmatech-ustunlukler.html', context)
+    return render(request, 'pragmatechapp/pragmatech-ustunlukler.html', {})
 
 def packages(request):
-    context = {
-        'applicants': Applicant.objects.all()
-    }
-    if request.method == "POST":
-        applicant_name = request.POST.get('name')
-        applicant_email = request.POST.get('email')
-        applicant_phone = request.POST.get('phone')
-        subject = 'Müraciətiniz qəbul olundu'
-        message = 'Salam, dəyərli ' + str(applicant_name) + '. \nTezliklə sizinlə əlaqə saxlanılacaq.'
-        from_email = settings.SERVER_EMAIL
-        recipient_list = [applicant_email]
-        send_mail(subject, message, from_email, recipient_list)
-        if request.POST.get('email'):
-            Applicant.objects.create(
-                name = request.POST.get('name'),
-                email = request.POST.get('email'),
-                phone = request.POST.get('phone')
-            )
-    return render(request, 'pragmatechapp/tedris-paketleri.html', context)
+    return render(request, 'pragmatechapp/tedris-paketleri.html', {})
 
 def conditions(request):
-    context = {
-        'applicants': Applicant.objects.all()
-    }
-    if request.method == "POST":
-        applicant_name = request.POST.get('name')
-        applicant_email = request.POST.get('email')
-        applicant_phone = request.POST.get('phone')
-        subject = 'Müraciətiniz qəbul olundu'
-        message = 'Salam, dəyərli ' + str(applicant_name) + '. \nTezliklə sizinlə əlaqə saxlanılacaq.'
-        from_email = settings.SERVER_EMAIL
-        recipient_list = [applicant_email]
-        send_mail(subject, message, from_email, recipient_list)
-        if request.POST.get('email'):
-            Applicant.objects.create(
-                name = request.POST.get('name'),
-                email = request.POST.get('email'),
-                phone = request.POST.get('phone')
-            )
-    return render(request, 'pragmatechapp/pragmatech-qebul-prosesi.html', context)
+    return render(request, 'pragmatechapp/pragmatech-qebul-prosesi.html', {})
 
 def html_css(request):
-    context = {
-        'applicants': Applicant.objects.all()
-    }
-    if request.method == "POST":
-        applicant_name = request.POST.get('name')
-        applicant_email = request.POST.get('email')
-        applicant_phone = request.POST.get('phone')
-        subject = 'Müraciətiniz qəbul olundu'
-        message = 'Salam, dəyərli ' + str(applicant_name) + '. \nTezliklə sizinlə əlaqə saxlanılacaq.'
-        from_email = settings.SERVER_EMAIL
-        recipient_list = [applicant_email]
-        send_mail(subject, message, from_email, recipient_list)
-        if request.POST.get('email'):
-            Applicant.objects.create(
-                name = request.POST.get('name'),
-                email = request.POST.get('email'),
-    return render(request, 'pragmatechapp/html-css.html', context)
+    return render(request, 'pragmatechapp/html-css.html', {})
 
 def javascript(request):
-    context = {
-        'applicants': Applicant.objects.all()
-    }
-    if request.method == "POST":
-        applicant_name = request.POST.get('name')
-        applicant_email = request.POST.get('email')
-        applicant_phone = request.POST.get('phone')
-        subject = 'Müraciətiniz qəbul olundu'
-        message = 'Salam, dəyərli ' + str(applicant_name) + '. \nTezliklə sizinlə əlaqə saxlanılacaq.'
-        from_email = settings.SERVER_EMAIL
-        recipient_list = [applicant_email]
-        send_mail(subject, message, from_email, recipient_list)
-        if request.POST.get('email'):
-            Applicant.objects.create(
-                name = request.POST.get('name'),
-                email = request.POST.get('email'),
-    return render(request, 'pragmatechapp/javascript.html', context)
+    return render(request, 'pragmatechapp/javascript.html', {})
 
 def csharp(request):
-    context = {
-        'applicants': Applicant.objects.all()
-    }
-    if request.method == "POST":
-        applicant_name = request.POST.get('name')
-        applicant_email = request.POST.get('email')
-        applicant_phone = request.POST.get('phone')
-        subject = 'Müraciətiniz qəbul olundu'
-        message = 'Salam, dəyərli ' + str(applicant_name) + '. \nTezliklə sizinlə əlaqə saxlanılacaq.'
-        from_email = settings.SERVER_EMAIL
-        recipient_list = [applicant_email]
-        send_mail(subject, message, from_email, recipient_list)
-        if request.POST.get('email'):
-            Applicant.objects.create(
-                name = request.POST.get('name'),
-                email = request.POST.get('email'),
-    return render(request, 'pragmatechapp/csharp.html', context)
+    return render(request, 'pragmatechapp/csharp.html', {})
 
 def php(request):
-    context = {
-        'applicants': Applicant.objects.all()
-    }
-    if request.method == "POST":
-        applicant_name = request.POST.get('name')
-        applicant_email = request.POST.get('email')
-        applicant_phone = request.POST.get('phone')
-        subject = 'Müraciətiniz qəbul olundu'
-        message = 'Salam, dəyərli ' + str(applicant_name) + '. \nTezliklə sizinlə əlaqə saxlanılacaq.'
-        from_email = settings.SERVER_EMAIL
-        recipient_list = [applicant_email]
-        send_mail(subject, message, from_email, recipient_list)
-        if request.POST.get('email'):
-            Applicant.objects.create(
-                name = request.POST.get('name'),
-                email = request.POST.get('email'),
-    return render(request, 'pragmatechapp/php.html', context)
+    return render(request, 'pragmatechapp/php.html', {})
 
 def python(request):
-    context = {
-        'applicants': Applicant.objects.all()
-    }
-    if request.method == "POST":
-        applicant_name = request.POST.get('name')
-        applicant_email = request.POST.get('email')
-        applicant_phone = request.POST.get('phone')
-        subject = 'Müraciətiniz qəbul olundu'
-        message = 'Salam, dəyərli ' + str(applicant_name) + '. \nTezliklə sizinlə əlaqə saxlanılacaq.'
-        from_email = settings.SERVER_EMAIL
-        recipient_list = [applicant_email]
-        send_mail(subject, message, from_email, recipient_list)
-        if request.POST.get('email'):
-            Applicant.objects.create(
-                name = request.POST.get('name'),
-                email = request.POST.get('email'),
-    return render(request, 'pragmatechapp/python.html', context)
+    return render(request, 'pragmatechapp/python.html', {})
 
 def devsecops(request):
-    context = {
-        'applicants': Applicant.objects.all()
-    }
-    if request.method == "POST":
-        applicant_name = request.POST.get('name')
-        applicant_email = request.POST.get('email')
-        applicant_phone = request.POST.get('phone')
-        subject = 'Müraciətiniz qəbul olundu'
-        message = 'Salam, dəyərli ' + str(applicant_name) + '. \nTezliklə sizinlə əlaqə saxlanılacaq.'
-        from_email = settings.SERVER_EMAIL
-        recipient_list = [applicant_email]
-        send_mail(subject, message, from_email, recipient_list)
-        if request.POST.get('email'):
-            Applicant.objects.create(
-                name = request.POST.get('name'),
-                email = request.POST.get('email'),
-    return render(request, 'pragmatechapp/devsecops.html', context)
+    return render(request, 'pragmatechapp/devsecops.html', {})
 
 def cybersecurity(request):
-    context = {
-        'applicants': Applicant.objects.all()
-    }
-    if request.method == "POST":
-        applicant_name = request.POST.get('name')
-        applicant_email = request.POST.get('email')
-        applicant_phone = request.POST.get('phone')
-        subject = 'Müraciətiniz qəbul olundu'
-        message = 'Salam, dəyərli ' + str(applicant_name) + '. \nTezliklə sizinlə əlaqə saxlanılacaq.'
-        from_email = settings.SERVER_EMAIL
-        recipient_list = [applicant_email]
-        send_mail(subject, message, from_email, recipient_list)
-        if request.POST.get('email'):
-            Applicant.objects.create(
-                name = request.POST.get('name'),
-                email = request.POST.get('email'),
-    return render(request, 'pragmatechapp/cybersecurity.html', context)
+    return render(request, 'pragmatechapp/cybersecurity.html', {})
 
 def foundation(request):
-    context = {
-        'applicants': Applicant.objects.all()
-    }
-    if request.method == "POST":
-        applicant_name = request.POST.get('name')
-        applicant_email = request.POST.get('email')
-        applicant_phone = request.POST.get('phone')
-        subject = 'Müraciətiniz qəbul olundu'
-        message = 'Salam, dəyərli ' + str(applicant_name) + '. \nTezliklə sizinlə əlaqə saxlanılacaq.'
-        from_email = settings.SERVER_EMAIL
-        recipient_list = [applicant_email]
-        send_mail(subject, message, from_email, recipient_list)
-        if request.POST.get('email'):
-            Applicant.objects.create(
-                name = request.POST.get('name'),
-                email = request.POST.get('email'),
-    return render(request, 'pragmatechapp/foundation.html', context)
+    return render(request, 'pragmatechapp/foundation.html', {})
 
 def frontend(request):
-    context = {
-        'applicants': Applicant.objects.all()
-    }
-    if request.method == "POST":
-        applicant_name = request.POST.get('name')
-        applicant_email = request.POST.get('email')
-        applicant_phone = request.POST.get('phone')
-        subject = 'Müraciətiniz qəbul olundu'
-        message = 'Salam, dəyərli ' + str(applicant_name) + '. \nTezliklə sizinlə əlaqə saxlanılacaq.'
-        from_email = settings.SERVER_EMAIL
-        recipient_list = [applicant_email]
-        send_mail(subject, message, from_email, recipient_list)
-        if request.POST.get('email'):
-            Applicant.objects.create(
-                name = request.POST.get('name'),
-                email = request.POST.get('email'),
-    return render(request, 'pragmatechapp/frontend-development.html', context)
+    return render(request, 'pragmatechapp/frontend-development.html', {})
 
 def backend(request):
-    context = {
-        'applicants': Applicant.objects.all()
-    }
-    if request.method == "POST":
-        applicant_name = request.POST.get('name')
-        applicant_email = request.POST.get('email')
-        applicant_phone = request.POST.get('phone')
-        subject = 'Müraciətiniz qəbul olundu'
-        message = 'Salam, dəyərli ' + str(applicant_name) + '. \nTezliklə sizinlə əlaqə saxlanılacaq.'
-        from_email = settings.SERVER_EMAIL
-        recipient_list = [applicant_email]
-        send_mail(subject, message, from_email, recipient_list)
-        if request.POST.get('email'):
-            Applicant.objects.create(
-                name = request.POST.get('name'),
-                email = request.POST.get('email'),
-    return render(request, 'pragmatechapp/backend-development.html', context)
+    return render(request, 'pragmatechapp/backend-development.html', {})
 
 def contact(request):
     context = {
