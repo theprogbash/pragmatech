@@ -25,7 +25,25 @@ def index(request):
     return render(request, 'pragmatechapp/index.html', context)
 
 def about_us(request): 
-    return render(request, 'pragmatechapp/about-us.html', {})
+    context = {
+        'applicants': Applicant.objects.all()
+    }
+    if request.method == "POST":
+        applicant_name = request.POST.get('name')
+        applicant_email = request.POST.get('email')
+        applicant_phone = request.POST.get('phone')
+        subject = 'Müraciətiniz qəbul olundu'
+        message = 'Salam, dəyərli ' + str(applicant_name) + '. \nTezliklə sizinlə əlaqə saxlanılacaq.'
+        from_email = settings.SERVER_EMAIL
+        recipient_list = [applicant_email]
+        send_mail(subject, message, from_email, recipient_list)
+        if request.POST.get('email'):
+            Applicant.objects.create(
+                name = request.POST.get('name'),
+                email = request.POST.get('email'),
+                phone = request.POST.get('phone')
+            )
+    return render(request, 'pragmatechapp/about-us.html', context)
 
 def advantages(request):
     return render(request, 'pragmatechapp/pragmatech-ustunlukler.html', {})
