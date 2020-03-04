@@ -3,37 +3,6 @@
 <div class="site-wrapper-reveal">
     {% load static %}
 
-    <div class="apply-overlay">
-        <div class="overlay-header">
-            <i class="fas fa-times close-btn"></i>
-        </div>
-        <div class="apply-modal">
-            <div class="business-solution-form-wrap ml-auto">
-                <div class="contact-title text-center section-space--mb_40">
-                    <h5 class="mb-10">Müraciət et</h5>
-                    <!-- <p class="text">Müracət üçün qeydiyyatdan keç!</p> -->
-                </div>
-                <form action="{% url 'about-us' %}" method="post">
-                    {% csrf_token %}
-                    <div class="contact-form__two">
-                        <div class="contact-inner">
-                            <input name="name" type="text" placeholder="Ad *">
-                        </div>
-                        <div class="contact-inner">
-                            <input name="email" type="email" placeholder="Email *">
-                        </div>
-                        <div class="contact-inner">
-                            <input name="number" type="text" placeholder="Əlaqə nömrəsi *">
-                        </div>
-                        <div class="comment-submit-btn text-center">
-                            <input class="ht-btn ht-btn-md send-btn" type="submit" value="Göndər">
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
     <div class="about-banner-wrap banner-space bg-img" data-bg="{% static 'assets/images/bg/about.jpg' %}">
         <div class=" container">
             {% load static %}
