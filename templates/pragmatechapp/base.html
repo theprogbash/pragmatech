@@ -60,6 +60,7 @@
                     <!-- <p class="text">Müracət üçün qeydiyyatdan keç!</p> -->
                 </div>
                 <form action="#" method="post">
+                    {% csrf_token %}
                     <div class="contact-form__two">
                         <div class="contact-inner">
                             <input name="name" type="text" placeholder="Ad *">
