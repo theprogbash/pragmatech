@@ -43,7 +43,7 @@ def about_us(request):
                 email = request.POST.get('email'),
                 phone = request.POST.get('phone')
             )
-    return render(request, 'pragmatechapp/about-us.html', {})
+    return render(request, 'pragmatechapp/about-us.html', context)
 
 def advantages(request):
     return render(request, 'pragmatechapp/pragmatech-ustunlukler.html', {})
