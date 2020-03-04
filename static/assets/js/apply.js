@@ -1,6 +1,5 @@
 $(document).ready(function () {
     $(".apply-btn").click(function () {
-        $(".apply-overlay").css("display", "flex");
         $(".apply-overlay").fadeIn().css("display", "flex");
         $(".apply-overlay").fadeIn(1000);
     });
