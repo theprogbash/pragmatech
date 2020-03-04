@@ -456,24 +456,6 @@
 
     <script src="{% static 'assets/js/apply.js' %}"></script>
 
-    <script>
-        $(document).on('submit', '#apply-form', function (e) {
-            e.preventDefault();
-
-            $.ajax({
-                type: 'POST',
-                url: 'index',
-                data: {
-                    name: $('#name').val(),
-                    email: $('#email').val(),
-                    phone: $('#phone').val(),
-                },
-                success: function () {
-                    alert("Göndərildi !");
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
