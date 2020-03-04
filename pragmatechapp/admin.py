@@ -6,7 +6,7 @@ class ApplicantAdmin(admin.ModelAdmin):
     list_display = ('name', 'email', 'phone')
 
 class MessageAdmin(admin.ModelAdmin):
-    list_display = ('sender_name', 'sender_email', 'message_subject', 'message_subject')
+    list_display = ('sender_name', 'sender_email', 'message_subject', 'message_content')
 
 admin.site.site_header = "Pragmatech - Admin Dashboard" 
 admin.site.unregister(Group)
