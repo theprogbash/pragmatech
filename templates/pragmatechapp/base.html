@@ -14,7 +14,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pragmatech.az/">
     <meta property="og:title" content="Pragmatech Education and Development Center">
-    <meta property="og:description" content="Pragmatech Təhsil və İnkişaf mərkəzi praqmatik təhsil modelinə əsaslanan tədris şirkətidir. Mərkəzimizdə frontend və backend proqramlaşdırma tədris edilir.">
+    <meta property="og:description"
+        content="Pragmatech Təhsil və İnkişaf mərkəzi praqmatik təhsil modelinə əsaslanan tədris şirkətidir. Mərkəzimizdə frontend və backend proqramlaşdırma tədris edilir.">
     <meta property="og:image" content="{% static 'assets/images/logo/logo-og.png' %}">
 
 
@@ -83,8 +84,8 @@
                                 oninput="this.setCustomValidity('')">
                         </div>
                         <div class="contact-inner">
-                            <input id="phone" name="phone" type="text" placeholder="Əlaqə nömrəsi *" name="phone" required
-                                minlength="10"
+                            <input id="phone" name="phone" type="text" placeholder="Əlaqə nömrəsi *" name="phone"
+                                required minlength="10"
                                 oninvalid="this.setCustomValidity('Telefon nömrənizi düzgün daxil edin.')"
                                 oninput="this.setCustomValidity('')">
                         </div>
@@ -456,22 +457,25 @@
     <script src="{% static 'assets/js/apply.js' %}"></script>
 
     <script>
-        $(document).on('submit', '#apply-form', function(e){
+        $(document).on('submit', '#apply-form', function (e) {
             e.preventDefault();
 
             $.ajax({
-               type: 'POST',
-               url: 'index',
-               data:{
-                   name: $('#name').val(),
-                   email: $('#email').val(),
-                   phone: $('#phone').val(),
-               },
-               success:function(){
-                   alert("Göndərildi !");
-               }
+                type: 'POST',
+                url: 'index',
+                data: {
+                    name: $('#name').val(),
+                    email: $('#email').val(),
+                    phone: $('#phone').val(),
+                },
+                success: function () {
+                    alert("Göndərildi !");
+                }
             });
         });
+    </script>
+    <script>
+        alert("hi");
     </script>
 </body>
 
