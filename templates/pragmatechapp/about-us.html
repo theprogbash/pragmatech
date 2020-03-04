@@ -13,7 +13,7 @@
                     <h5 class="mb-10">Müraciət et</h5>
                     <!-- <p class="text">Müracət üçün qeydiyyatdan keç!</p> -->
                 </div>
-                <form action="#" method="post">
+                <form action="{% url 'index' %}" method="post">
                     {% csrf_token %}
                     <div class="contact-form__two">
                         <div class="contact-inner">
