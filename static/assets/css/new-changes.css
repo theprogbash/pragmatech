@@ -270,12 +270,12 @@
 
 .appointment-hero-wrap {
     position: relative;
-    z-index: 999999;
+    z-index: 1;
 }
 
 .business-solution-form-wrap {
     position: relative;
-    z-index: 999;
+    z-index: 1;
 }
 
 
