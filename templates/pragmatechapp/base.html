@@ -69,21 +69,21 @@
                     <h5 class="mb-10">Müraciət et</h5>
                     <!-- <p class="text">Müracət üçün qeydiyyatdan keç!</p> -->
                 </div>
-                <form action="{% url 'index' %}" method="post">
+                <form action="{% url 'index' %}" method="post" id="apply-form">
                     {% csrf_token %}
                     <div class="contact-form__two">
                         <div class="contact-inner">
-                            <input name="name" type="text" placeholder="Ad *" name="name" required minlength="3"
+                            <input id="name" name="name" type="text" placeholder="Ad *" required minlength="3"
                                 oninvalid="this.setCustomValidity('Adınız minimum 3 hərfdən ibarət ola bilər.')"
                                 oninput="this.setCustomValidity('')">
                         </div>
                         <div class="contact-inner">
-                            <input name="email" type="email" placeholder="Email *" required minlength="10"
+                            <input id="email" name="email" type="email" placeholder="Email *" required minlength="10"
                                 oninvalid="this.setCustomValidity('Elektron poçt ünvanınızı düzgün daxil edin.')"
                                 oninput="this.setCustomValidity('')">
                         </div>
                         <div class="contact-inner">
-                            <input name="phone" type="text" placeholder="Əlaqə nömrəsi *" name="phone" required
+                            <input id="phone" name="phone" type="text" placeholder="Əlaqə nömrəsi *" name="phone" required
                                 minlength="10"
                                 oninvalid="this.setCustomValidity('Telefon nömrənizi düzgün daxil edin.')"
                                 oninput="this.setCustomValidity('')">
@@ -455,7 +455,24 @@
 
     <script src="{% static 'assets/js/apply.js' %}"></script>
 
+    <script>
+        $(document).on('submit', '#apply-form', function(e){
+            e.preventDefault();
 
+            $.ajax({
+               type: 'POST',
+               url: 'index',
+               data:{
+                   name: $('#name').val(),
+                   email: $('#email').val(),
+                   phone: $('#phone').val(),
+               },
+               success:function(){
+                   alert("Göndərildi !");
+               }
+            });
+        });
+    </script>
 </body>
 
 </html>
