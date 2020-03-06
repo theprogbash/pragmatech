@@ -10,7 +10,6 @@ def index(request):
     if request.method == "POST":
         applicant_name = request.POST.get('name')
         applicant_email = request.POST.get('email')
-        applicant_phone = request.POST.get('phone')
         subject = 'Müraciətiniz qəbul olundu'
         message = 'Salam, dəyərli ' + str(applicant_name) + '. \nTezliklə sizinlə əlaqə saxlanılacaq.'
         from_email = settings.SERVER_EMAIL
