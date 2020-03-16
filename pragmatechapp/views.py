@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import Applicant, Message
 from django.core.mail import send_mail
 from django.conf import settings
+from django.contrib import messages
 
 def index(request): 
     context = {
@@ -15,6 +16,7 @@ def index(request):
         from_email = settings.SERVER_EMAIL
         recipient_list = [applicant_email]
         send_mail(subject, message, from_email, recipient_list)
+        messages.info(request, 'Müraciətiniz qəbul olundu.')
         if request.POST.get('email'):
             Applicant.objects.create(
                 name = request.POST.get('name'),

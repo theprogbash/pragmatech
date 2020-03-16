@@ -159,6 +159,13 @@
         </div>
     </div>
 
+    {% if messages %}
+    <div class="alert alert-success" role="alert">
+        {% for message in messages %}
+            <span>{{ message }}</span>
+        {% endfor %}
+    </div>
+    {% endif %}
     <!--====================  header area ====================-->
     <div class="header-area header-sticky only-mobile-sticky">
         <div class="container">
