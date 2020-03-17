@@ -7,7 +7,7 @@ $(document).ready(function () {
     $(document).click(function (e) {
         if ($(e.target).is('.success-overlay')) {
             $(".success-overlay").fadeOut();
-            $(".successpply-overlay").fadeOut(1000);
+            $(".success-overlay").fadeOut(1000);
         }
     });
 });
