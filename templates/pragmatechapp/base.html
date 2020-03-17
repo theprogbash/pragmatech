@@ -106,6 +106,7 @@
     <link rel="stylesheet" href="{% static 'assets/css/new-changes.css' %}">
 
     <link rel="stylesheet" href="{% static 'assets/css/modal.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/success-modal.css' %}">
 
 
 </head>
@@ -159,11 +160,28 @@
         </div>
     </div>
 
-    {% if messages %}
+    <!-- {% if messages %}
     <div class="alert alert-success" role="alert">
         {% for message in messages %}
-            <span>{{ message }}</span>
+        <span>{{ message }}</span>
         {% endfor %}
+    </div>
+    {% endif %} -->
+
+    {% if messages %}
+    <div class="success-overlay">
+        <div class="success-header">
+            <i class="fas fa-times close-btn"></i>
+        </div>
+        <div class="success-modal">
+            <div class="business-solution-form-wrap ml-auto">
+                <div class="contact-title text-center section-space--mb_40">
+                    {% for message in messages %}
+                    <h2 class="mb-10">Müraciətiniz qəbul olundu.</h2>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
     </div>
     {% endif %}
     <!--====================  header area ====================-->
