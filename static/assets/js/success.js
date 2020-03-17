@@ -5,7 +5,7 @@ $(document).ready(function () {
     });
 
     $(document).click(function (e) {
-        if ($(e.target).is('.apply-overlay')) {
+        if ($(e.target).is('.success-overlay')) {
             $(".success-overlay").fadeOut();
             $(".asuccesspply-overlay").fadeOut(1000);
         }
