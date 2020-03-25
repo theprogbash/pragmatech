@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Applicant, Message
+from .models import Applicant, UserMessage
 from django.core.mail import send_mail
 from django.conf import settings
 from django.contrib import messages
@@ -69,7 +69,7 @@ def backend(request):
 
 def contact(request):
     context = {
-        'messages': Message.objects.all()
+        'messages': UserMessage.objects.all()
     }
     if request.method == "POST":
         sender_name = request.POST.get('sender_name')
@@ -77,12 +77,12 @@ def contact(request):
         message_subject = request.POST.get('message_subject')
         message_content = request.POST.get('message_content')
         subject = 'Mesajınız qəbul olundu'
-        message = 'Salam, dəyərli ' + str(sender_name) + '. \nTezliklə sizinlə əlaqə saxlanılacaq.'
+        user_message = 'Salam, dəyərli ' + str(sender_name) + '. \nTezliklə sizinlə əlaqə saxlanılacaq.'
         from_email = settings.SERVER_EMAIL
         recipient_list = [sender_email]
-        send_mail(subject, message, from_email, recipient_list)
+        send_mail(subject, user_message, from_email, recipient_list)
         if request.POST.get('message_content'):
-            Message.objects.create(
+            UserMessage.objects.create(
                 sender_name = request.POST.get('sender_name'),
                 sender_email = request.POST.get('sender_email'),
                 message_subject = request.POST.get('message_subject'),

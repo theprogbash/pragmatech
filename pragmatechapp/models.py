@@ -8,7 +8,7 @@ class Applicant(models.Model):
     def __str__(self):
         return self.name
 
-class Message(models.Model):
+class UserMessage(models.Model):
     sender_name = models.CharField(max_length=20)
     sender_email = models.EmailField(max_length=50)
     message_subject = models.CharField(max_length=100)
