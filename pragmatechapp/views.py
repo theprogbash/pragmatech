@@ -68,9 +68,7 @@ def backend(request):
     return render(request, 'pragmatechapp/backend-development.html', {})
 
 def contact(request):
-    context = {
-        'messages': Message.objects.all()
-    }
+    context = {}
     if request.method == "POST":
         sender_name = request.POST.get('sender_name')
         sender_email = request.POST.get('sender_email')
