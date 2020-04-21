@@ -18,5 +18,5 @@ urlpatterns = [
     path('frontend-development', views.frontend, name='frontend-development'),
     path('backend-development', views.backend, name='backend-development'),
     path('contact', views.contact, name='contact'),
-    # path('', views.coming_soon, name='coming_soon'),
+    path('privacy-policy', views.privacy_policy, name='privacy_policy'),
 ]

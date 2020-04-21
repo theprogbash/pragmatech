@@ -90,5 +90,5 @@ def contact(request):
             )
     return render(request, 'pragmatechapp/contact.html', context)
 
-# def coming_soon(request):
-#     return render(request, 'pragmatechapp/coming-soon.html', {})
+def privacy_policy(request):
+    return render(request, 'pragmatechapp/privacy-policy.html', {})
