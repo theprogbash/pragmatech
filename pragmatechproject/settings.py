@@ -104,7 +104,7 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 SERVER_EMAIL = 'office@pragmatech.az'
 EMAIL_HOST_USER = 'office@pragmatech.az'
-EMAIL_HOST_PASSWORD = 'parolumuz2020'
+EMAIL_HOST_PASSWORD = 'RizvanKamal101'
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
